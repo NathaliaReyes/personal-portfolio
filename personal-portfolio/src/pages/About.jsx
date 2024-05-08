@@ -1,17 +1,18 @@
 import Recommendation from "../components/Recommendation";
+import '../stylesheets/About.css';
+import image from '../images/silvia.jpg';
 
 export default function About() {
     return (
         <div>
-            <div>
+            <div className="container">
                 <h1>About Me</h1>
+                <img className="img-silvia" src={image} alt="Image Silvia" />
                 <p>
-                Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-                Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-                mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-                lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-                imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-                in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+                Full stack web developer with background in chemical engineering👩‍🔬, 
+                currently in search of internship or junior developer role in order to expand 
+                skills and experience in the field. Strong technical understanding in multiple 
+                languages, detail oriented, and ability to learn new concepts quickly.
                 </p>
             </div>
             <div>

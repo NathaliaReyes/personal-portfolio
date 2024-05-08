@@ -22,7 +22,7 @@ function Recommendation() {
     },
     {
       name: 'Monica S. II',
-      country: 'Sweden',
+      country: 'Argentina',
       image: 'Monica',
       role: 'Senior IT Recruiter',
       company: 'LATAM',
@@ -45,7 +45,7 @@ function Recommendation() {
     }, [props.image]);
 
     return (
-      <div className='testimony-container'>
+      <div className='recommendation-container container'>
         <img className='testimony-image' src={image} alt={`image-${props.image}`} />
         <div className='text-testimony-container'>
           <p className='name-testimony'>
