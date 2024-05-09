@@ -91,11 +91,16 @@ function Project() {
           <div className="col-12">
             <img className="img-fluid" src={image} alt="Project Picture" />
           </div>
-          <div className="col-12">
+          <div className="col-12 row">
               <p className="text-left h4">{props.title}</p>
               <a href={props.videoWalthrought} target="_blank"><i className="fas fa-video"></i></a>
               <a href={props.gitHub} target="_blank"><i className="fab fa-github"></i></a>
               <a href={props.deployed} target="_blank"><i className="fas fa-external-link-alt"></i></a>
+          </div>
+          <div>
+            <p className="text-left">
+              {props.description}
+            </p>
           </div>
         </div>
       </div>
@@ -106,7 +111,6 @@ function Project() {
   return (
     <div>
       <div className='container'>
-        <h1>Projects:</h1>
         {projects.map((project, index) => (
           <ProjectsToShow
             key={index}

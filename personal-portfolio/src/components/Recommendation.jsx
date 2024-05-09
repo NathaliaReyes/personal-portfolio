@@ -52,7 +52,7 @@ function Recommendation() {
               <img className='testimony-image' src={image} alt={`image-${props.image}`} />
             </div>
             <div className='col-lg-6 col-12'> 
-              <div>
+              <div className='mt-3'>
                 <p className='name-testimony h5'>
                   <strong>{props.name}</strong> in {props.country}
                 </p>
