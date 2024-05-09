@@ -9,7 +9,7 @@ export default function About() {
             <div className="container">
                 <h1>About Me</h1>
                 <img className="img-silvia" src={image} alt="Image Silvia" />
-                <p>
+                <p className="lead">
                     Full stack web developer with background in chemical engineering👩‍🔬, 
                     currently in search of internship or junior developer role in order to expand 
                     skills and experience in the field. Strong technical understanding in multiple 

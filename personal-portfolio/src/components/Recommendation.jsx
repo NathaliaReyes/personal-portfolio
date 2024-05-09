@@ -45,18 +45,18 @@ function Recommendation() {
     }, [props.image]);
 
     return (
-      <section className='bg-light text-center m-4'>
-        <div className='recommendation-container container'>
-          <div className='row p-2'>
+      <section className='bg-light text-center'>
+        <div className='container'>
+          <div className='row p-2 mt-4'>
             <div className='col-lg-6 col-12'>
-              <img className='testimony-image ' src={image} alt={`image-${props.image}`} />
+              <img className='testimony-image' src={image} alt={`image-${props.image}`} />
             </div>
             <div className='col-lg-6 col-12'> 
               <div className='text-testimony-container'>
                 <p className='name-testimony'>
                   <strong>{props.name}</strong> in {props.country}
                 </p>
-                <p className='role-testimony'>
+                <p>
                   {props.role} at <strong>{props.company}</strong>
                 </p>
                 <p className='text-testimony lead mb-0'>
@@ -72,8 +72,8 @@ function Recommendation() {
   }
 
   return (
-    <div className="App">
-      <div className='mainContainer'>
+    <div>
+      <div className='container'>
         <h1>Recommendations:</h1>
         {recommendations.map((recommendation, index) => (
           <LinkedInRecommendation

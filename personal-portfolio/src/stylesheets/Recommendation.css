@@ -1,15 +1,3 @@
-/* .recommendation-container {
-  width: 1170px;
-  height: 368px;
-  margin: 10px 10px 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #a8d0db;
-  border-radius: 10px;
-  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 25%);
-} */
-
 .testimony-image {
   margin-left: 10px;
   width: 100%;
@@ -25,26 +13,3 @@
     justify-content: center;
   }
 }
-
-/* .text-testimony-container {
-  text-align: center;
-  padding: 40px;
-  font-family: Lato, sans-serif;
-  font-weight: 400;
-  line-height: 1.5rem;
-} */
-
-/* .name-testimony {
-  font-size: 1.3rem;
-} */
-
-/* .role-testimony {
-  font-size: 1.3rem;
-  margin-top: 15px;
-  padding-bottom: 30px;
-} */
-
-/* .text-testimony {
-  font-size: 1.1rem;
-  text-align: justify;
-} */
