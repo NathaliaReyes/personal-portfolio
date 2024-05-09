@@ -10,7 +10,7 @@ function Recommendation() {
       image: 'becky',
       role: 'Full-Stack Web Developer',
       company: 'University of Denver BootCamp',
-      testimony: "Sylvia is someone I always want on my team. The first reason is that she is so incredibly intelligent. She is always several steps ahead of the curve due to her dedication to her work and her diligence when it comes to prioritizing her time. A second major reason is that the work she produces is so incredibly beautiful - from the user side of things to the organization in her code. A third reason (of countless) is how enjoyable she is to work with. On top of her outstanding abilities, she is such a pleasure to collaborate with, figure problems out with, she is one of the kindest individuals I have come across - always willing to help with anything she can (which I have yet to see something come up that we haven't been able to figure out 😎) and I am so lucky to have been able to connect with her in these stages of our careers. Any team that Sylvia is a part of is one that will be producing top-notch work as I have never seen her produce anything less."
+      testimony: "Sylvia is someone I always want on my team. The first reason is that she is so incredibly intelligent. She is always several steps ahead of the curve due to her dedication to her work and her diligence when it comes to prioritizing her time. A second major reason is that the work she produces is so incredibly beautiful - from the user side of things to the organization in her code. A third reason (of countless) is how enjoyable she is to work with. Any team that Sylvia is a part of is one that will be producing top-notch work as I have never seen her produce anything less."
     },
     {
       name: 'Jordan Heersink, MBA',
@@ -45,20 +45,29 @@ function Recommendation() {
     }, [props.image]);
 
     return (
-      <div className='recommendation-container container'>
-        <img className='testimony-image' src={image} alt={`image-${props.image}`} />
-        <div className='text-testimony-container'>
-          <p className='name-testimony'>
-            <strong>{props.name}</strong> in {props.country}
-          </p>
-          <p className='role-testimony'>
-            {props.role} at <strong>{props.company}</strong>
-          </p>
-          <p className='text-testimony'>
-            "{props.testimony}"
-          </p>
+      <section className='bg-light text-center m-4'>
+        <div className='recommendation-container container'>
+          <div className='row p-2'>
+            <div className='col-lg-6 col-12'>
+              <img className='testimony-image ' src={image} alt={`image-${props.image}`} />
+            </div>
+            <div className='col-lg-6 col-12'> 
+              <div className='text-testimony-container'>
+                <p className='name-testimony'>
+                  <strong>{props.name}</strong> in {props.country}
+                </p>
+                <p className='role-testimony'>
+                  {props.role} at <strong>{props.company}</strong>
+                </p>
+                <p className='text-testimony lead mb-0'>
+                  "{props.testimony}"
+                </p>
+              </div>
+
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     )
   }
 

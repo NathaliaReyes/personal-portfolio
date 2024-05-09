@@ -1,4 +1,4 @@
-.recommendation-container {
+/* .recommendation-container {
   width: 1170px;
   height: 368px;
   margin: 10px 10px 50px;
@@ -8,34 +8,43 @@
   background-color: #a8d0db;
   border-radius: 10px;
   box-shadow: 0 3px 13px 1px rgb(0 0 0 / 25%);
-}
+} */
 
 .testimony-image {
   margin-left: 10px;
-  height: 60%;
-  width: auto;
+  width: 100%;
+  height: auto;
+  /* width: auto; */
   border-radius: 5px;
 }
 
-.text-testimony-container {
+@media (min-width: 992px) { /* Aplica estos estilos solo en pantallas lg o más grandes */
+  .col-lg-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* .text-testimony-container {
   text-align: center;
   padding: 40px;
   font-family: Lato, sans-serif;
   font-weight: 400;
   line-height: 1.5rem;
-}
+} */
 
-.name-testimony {
+/* .name-testimony {
   font-size: 1.3rem;
-}
+} */
 
-.role-testimony {
+/* .role-testimony {
   font-size: 1.3rem;
   margin-top: 15px;
   padding-bottom: 30px;
-}
+} */
 
-.text-testimony {
+/* .text-testimony {
   font-size: 1.1rem;
   text-align: justify;
-}
+} */
