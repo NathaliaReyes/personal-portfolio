@@ -18,7 +18,7 @@ function Recommendation() {
       image: 'jordan',
       role: 'Full-Stack Web Developer',
       company: 'University of Denver BootCamp',
-      testimony: "Silvia’s attention to detail and willingness to dive head-first into new concepts is something that impressed me in my time working with her. When presented with a task that was new and nobody else really wanted, Silvia did not hesitate to take it. Silvia is willing to take the time to not only learn new skills (and learn them quickly) but also takes the time to perfect them too. During my time working with her, there was never a worry that she wouldn’t get the job done either. She did her job (again, to perfection) and had a fantastic attitude along the way. She’s fun to work with and a great worker. Any team would be lucky to have Silvia as an addition and I highly recommend her!"
+      testimony: "Silvia’s attention to detail and willingness to dive head-first into new concepts is something that impressed me in my time working with her. When presented with a task that was new and nobody else really wanted, Silvia did not hesitate to take it. Silvia is willing to take the time to not only learn new skills (and learn them quickly) but also takes the time to perfect them too. During my time working with her, there was never a worry that she wouldn’t get the job done either. She did her job (again, to perfection) and had a fantastic attitude along the way. She’s fun to work with and a great worker."
     },
     {
       name: 'Monica S. II',
@@ -53,10 +53,10 @@ function Recommendation() {
             </div>
             <div className='col-lg-6 col-12'> 
               <div className='text-testimony-container'>
-                <p className='name-testimony'>
+                <p className='name-testimony h5'>
                   <strong>{props.name}</strong> in {props.country}
                 </p>
-                <p>
+                <p className='text-secondary'>
                   {props.role} at <strong>{props.company}</strong>
                 </p>
                 <p className='text-testimony lead mb-0'>

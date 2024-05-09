@@ -8,6 +8,10 @@ html, body {
   background-color: #f5f6f7;
 }
 
+.main-content {
+  margin-bottom: 10em; /* Ajusta este valor según la altura de tu pie de página */
+}
+
 .profile-footer {
   text-align: center;
   position: fixed;
