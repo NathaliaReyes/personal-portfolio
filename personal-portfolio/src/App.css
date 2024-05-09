@@ -7,3 +7,10 @@ html, body {
   font-size: 18px;
   background-color: #f5f6f7;
 }
+
+.profile-footer {
+  text-align: center;
+  position: fixed;
+  inset: auto 0 0 0;
+  padding: 1em;
+}
