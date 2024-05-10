@@ -49,17 +49,17 @@ function Recommendation() {
         <div className='container'>
           <div className='row p-2 mt-4'>
             <div className='col-lg-6 col-12'>
-              <img className='testimony-image' src={image} alt={`image-${props.image}`} />
+              <img className='recommendation-image' src={image} alt={`image-${props.image}`} />
             </div>
             <div className='col-lg-6 col-12'> 
               <div className='mt-3'>
-                <p className='name-testimony h5'>
+                <p className='h5'>
                   <strong>{props.name}</strong> in {props.country}
                 </p>
                 <p className='text-secondary'>
                   {props.role} at <strong>{props.company}</strong>
                 </p>
-                <p className='text-testimony lead mb-0'>
+                <p className='mb-0'>
                   "{props.testimony}"
                 </p>
               </div>
