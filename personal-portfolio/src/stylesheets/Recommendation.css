@@ -1,9 +1,19 @@
 .recommendation-image {
   margin-left: 5px;
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 200px;
   /* width: auto; */
   border-radius: 5px;
+  
+}
+
+nav {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.custom-text-justify {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 @media (min-width: 992px) { /* Aplica estos estilos solo en pantallas lg o más grandes */
