@@ -45,21 +45,21 @@ function Recommendation() {
     }, [props.image]);
 
     return (
-      <section className='bg-light text-center m-5'>
+      <section className='bg-light  m-5'>
         <div className='container'>
-          <div className='row p-2 border border-info'>
-            <div className='col-lg-6 col-12'>
+          <div className='row border border-info'>
+            <div className='col-lg-6 col-12 img-container'>
               <img className='recommendation-image' src={image} alt={`image-${props.image}`} />
             </div>
             <div className='col-lg-6 col-12'> 
               <div className='mt-3'>
-                <p className='h5'>
+                <p className='h5 text-center'>
                   <strong>{props.name}</strong> in {props.country}
                 </p>
-                <p className='text-secondary'>
+                <p className='text-secondary text-center'>
                   {props.role} at <strong>{props.company}</strong>
                 </p>
-                <p className='mb-0 custom-text-justify'>
+                <p className='text-justify'>
                   "{props.text}"
                 </p>
               </div>
