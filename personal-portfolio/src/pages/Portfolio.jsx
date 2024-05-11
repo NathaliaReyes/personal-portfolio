@@ -2,7 +2,7 @@ import Project from "../components/Project";
 
 export default function Portfolio() {
     return (
-      <div className="container">
+      <div className="container pt-3">
         <h1>My Projects:</h1>
         <p>
           Some of my projects are listed below. 

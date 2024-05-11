@@ -85,32 +85,24 @@ function Project() {
     }, [props.image]);
 
   return (
-    <section className='bg-light text-center'>
-      <div className="container">
-        <div className="row p-2 mt-4">
-          <div className="col-12">
-            <img className="img-fluid" src={image} alt="Project Picture" />
-          </div>
-          <div className="col-12 row">
-              <p className="text-left h4">{props.title}</p>
-              <a href={props.videoWalthrought} target="_blank"><i className="fas fa-video"></i></a>
-              <a href={props.gitHub} target="_blank"><i className="fab fa-github"></i></a>
-              <a href={props.deployed} target="_blank"><i className="fas fa-external-link-alt"></i></a>
-          </div>
-          <div>
-            <p className="text-left">
-              {props.description}
-            </p>
+    <div className="col-md-6 mb-3">
+        <div className="card border border-secondary">
+          <img className="card-img-top img-fluid" src={image} alt="Project Picture" />
+          <div className="card-body">
+            <h5 className="card-title">{props.title}</h5>
+            <p className="card-text">{props.description}</p>
+            <a href={props.videoWalthrought} target="_blank"><i className="fas fa-video"></i></a>
+            <a href={props.gitHub} target="_blank"><i className="fab fa-github"></i></a>
+            <a href={props.deployed} target="_blank"><i className="fas fa-external-link-alt"></i></a>
           </div>
         </div>
-      </div>
-    </section>
+    </div>
   )
 }
 
   return (
     <div>
-      <div className='container'>
+      <div className='row justify-content-center'>
         {projects.map((project, index) => (
           <ProjectsToShow
             key={index}

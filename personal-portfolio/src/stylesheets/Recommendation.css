@@ -1,5 +1,5 @@
 .recommendation-image {
-  /* margin-left: 5px; */
+  margin-left: 5px;
   /* width: 200px; */
   height: 200px;
   width: auto;
@@ -21,10 +21,8 @@ nav {
   justify-content: center;
 }
 
-@media (min-width: 992px) { /* Aplica estos estilos solo en pantallas lg o más grandes */
-  .col-lg-6 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.parrafo {
+  font-size: 18px;
+  /* font-weight: bold; */
+  /* text-align: center; */
 }

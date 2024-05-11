@@ -28,7 +28,7 @@ function Contact() {
   // };
 
   return (
-    <div className='container mt-4 text-center col-12 pt-3 pl-3 pr-3 rounded container-form'>
+    <div className='container pt-3 text-center col-12 pl-3 pr-3 rounded container-form'>
       <p>Interested in getting in touch? You're welcome to reach out via LinkedIn, GitHub, or email. 
         Alternatively, you can simply fill out the form below to send a message. 
         Excited to connect with you!</p>
