@@ -4,48 +4,48 @@ import '../stylesheets/Project.css';
 function Project() {
   const projects = [
     {
-      title: 'coffee-outlet',
+      title: 'Coffee-Outlet',
       features: [
         'User Registration and Authentication', 
         'Coffee Shop Creation', 
         'Feedback System',
       ],
-      description: 'some description',
+      description: 'An interactive MVC web application catering to coffee aficionados. Users share experiences, post about new coffee shops, and provide feedback, fostering a vibrant community.',
       image: 'coffee-outlet',
       gitHub: 'https://github.com/NathaliaReyes/coffee-outlet.git',
       videoWalthrought: 'https://drive.google.com/file/d/1vU7d2GpcvbSMt_iA-AzY20sFmxL4tfmc/view?usp=sharing',
-      deployed:''
+      deployed:'https://coffee-outlet.onrender.com/'
     },
     {
-      title: 'tech-blog',
+      title: 'Tech-Blog',
       features: [
         'User Registration and Authentication', 
         'Blog Post Creation', 
         'Blog Post Viewing'
       ],
-      description: 'some description',
+      description: "CMS-style Tech Blog: MVC architecture, user posts, comments. Here, users can seamlessly publish their blog posts, interact with fellow developers contributions, and engage in vibrant discussions. ",
       image: 'tech-blog',
       gitHub: 'https://github.com/NathaliaReyes/tech-blog.git',
       videoWalthrought: '',
       deployed:''
     },
     {
-      title: 'break-the-scroll',
+      title: 'Break-the-Scroll',
       features: [
         'uses data from the OPEN TRIVIA DATABASE API by [PIXELTAIL GAMES LLC.], available under the [Creative Commons Attribution-ShareAlike 4.0 International License]', 
         'uses data from the Bored API by [Bored API], available under the [Creative Commons Attribution-ShareAlike 4.0 International License]', 
         'jQuery for simplifying HTML document traversal, event handling, and animation.'
       ],
-      description: '',
+      description: 'This webpage is meant to encourage users to stop the mindless scrolling on TikTok, Reddit, Instagram, or whatever media they’re too plugged into. When users scan the QR code, they’re presented with a trivia game that is meant to engage their mind, and then they’re given a suggestion of something to do that’s not on their phone.',
       image: 'trivia-quiz',
       gitHub: 'https://github.com/NathaliaReyes/break-the-scroll.git',
       videoWalthrought: 'https://beckpull.github.io/break-the-scroll/',
       deployed:''
     },
     {
-      title: 'weather dashboard',
+      title: 'Weather Dashboard',
       features: ['', '', ''],
-      description: '',
+      description: 'This Weather Dashboard project is a practical application that empowers users to check the current weather and forecast for their preferred cities. Offering real-time weather data and a 5-day forecast, users can plan their activities effectively. The app includes a favorites feature for saving frequently visited cities, ensuring quick access.',
       image: 'weather-dashboard',
       gitHub: 'https://github.com/NathaliaReyes/weather-dashboard.git',
       videoWalthrought: '',
@@ -54,7 +54,7 @@ function Project() {
     {
       title: 'Sales Management',
       features: ['', '', ''],
-      description: '',
+      description: 'This is a REST API developed in Java using Spring Boot, designed to streamline standard processes in commercial transactions for products, including sales recording and stock management.',
       image: 'sales-management',
       gitHub: 'https://github.com/NathaliaReyes/SalesManagement.git',
       videoWalthrought: '',
@@ -63,7 +63,7 @@ function Project() {
     {
       title: 'Spa Database',
       features: ['', '', ''],
-      description: '',
+      description: 'This project creates a relational database for a spa, managing client transactions like service bookings and product purchases. It simplifies operations and enhances the customer and employee experience. MySQL Workbench is used for development.',
       image: 'spa-db',
       gitHub: 'https://github.com/NathaliaReyes/spa-mysql-db.git',
       videoWalthrought: '',
