@@ -10,9 +10,6 @@
   font-style: normal;
 }
 
-header {
-  position: sticky;
-  top: 0px;
-  left: 0;
-  width: 100%;
+.navbar-nav {
+  margin-left: auto;
 }

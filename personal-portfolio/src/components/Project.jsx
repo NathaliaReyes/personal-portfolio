@@ -87,7 +87,7 @@ function Project() {
 
   return (
     <div className="col-md-6 mb-3">
-        <div className="card border border-secondary d-flex felx-column">
+        <div className="card border border-secondary">
           <img className="card-img-top img-fluid img-project" src={image} alt="Project Picture" />
           <div className="card-body">
             <h5 className="card-title">{props.title}</h5>

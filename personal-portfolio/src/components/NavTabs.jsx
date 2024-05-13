@@ -25,14 +25,14 @@ function NavTabs() {
 
   return (
     <>
-      <nav className='navbar navbar-expand-lg navbar-light bg-light sticky-top'>
+      <nav className='navbar navbar-expand-lg navbar-light bg-light'>
         <img className='logo' src={image} />
         <a className="navbar-brand tangerine-bold" href="#">Silvia Reyes</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <Link
                 to="/"

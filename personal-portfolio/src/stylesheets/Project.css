@@ -1,4 +1,11 @@
 .img-project {
-    height: 220px; /* maintain aspect ratio */
-    /* object-fit: cover; */
+  height: 220px;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
