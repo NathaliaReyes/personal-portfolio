@@ -1,0 +1,4 @@
+.img-project {
+    height: 220px; /* maintain aspect ratio */
+    /* object-fit: cover; */
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import '../stylesheets/Project.css';
 
 function Project() {
   const projects = [
@@ -86,8 +87,8 @@ function Project() {
 
   return (
     <div className="col-md-6 mb-3">
-        <div className="card border border-secondary">
-          <img className="card-img-top img-fluid" src={image} alt="Project Picture" />
+        <div className="card border border-secondary d-flex felx-column">
+          <img className="card-img-top img-fluid img-project" src={image} alt="Project Picture" />
           <div className="card-body">
             <h5 className="card-title">{props.title}</h5>
             <p className="card-text">{props.description}</p>
