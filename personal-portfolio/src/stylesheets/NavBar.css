@@ -1,12 +1,18 @@
 .tangerine-regular {
-    font-family: "Tangerine", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .tangerine-bold {
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  left: 0;
+  width: 100%;
+}
