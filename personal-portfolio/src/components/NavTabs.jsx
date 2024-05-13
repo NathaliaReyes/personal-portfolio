@@ -12,9 +12,13 @@ function NavTabs() {
     const navbar = document.querySelector('.navbar-collapse');
     const navLinks = document.querySelectorAll('.nav-link');
 
+    const navbarToggler = document.querySelector('.navbar-toggler');
+
     navLinks.forEach((link) => {
       link.addEventListener('click', () => {
-        navbar.classNameList.remove('show');
+        navbar.classList.remove('show');
+        navbarToggler.classList.add('collapsed');
+        navbarToggler.setAttribute('aria-expanded', false);
       });
     });
   }, []);
