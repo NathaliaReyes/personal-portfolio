@@ -23,7 +23,7 @@ function Project() {
         'Blog Post Viewing'
       ],
       description: 'some description',
-      image: '',
+      image: 'tech-blog',
       gitHub: 'https://github.com/NathaliaReyes/tech-blog.git',
       videoWalthrought: '',
       deployed:''
@@ -36,35 +36,35 @@ function Project() {
         'jQuery for simplifying HTML document traversal, event handling, and animation.'
       ],
       description: '',
-      image: 'break_the_scroll',
+      image: 'trivia-quiz',
       gitHub: 'https://github.com/NathaliaReyes/break-the-scroll.git',
       videoWalthrought: 'https://beckpull.github.io/break-the-scroll/',
       deployed:''
     },
     {
-      title: '',
+      title: 'weather dashboard',
       features: ['', '', ''],
       description: '',
-      image: '',
-      gitHub: '',
+      image: 'weather-dashboard',
+      gitHub: 'https://github.com/NathaliaReyes/weather-dashboard.git',
+      videoWalthrought: '',
+      deployed:'https://nathaliareyes.github.io/weather-dashboard/'
+    },
+    {
+      title: 'Sales Management',
+      features: ['', '', ''],
+      description: '',
+      image: 'sales-management',
+      gitHub: 'https://github.com/NathaliaReyes/SalesManagement.git',
       videoWalthrought: '',
       deployed:''
     },
     {
-      title: '',
+      title: 'Spa Database',
       features: ['', '', ''],
       description: '',
-      image: '',
-      gitHub: '',
-      videoWalthrought: '',
-      deployed:''
-    },
-    {
-      title: '',
-      features: ['', '', ''],
-      description: '',
-      image: '',
-      gitHub: '',
+      image: 'spa-db',
+      gitHub: 'https://github.com/NathaliaReyes/spa-mysql-db.git',
       videoWalthrought: '',
       deployed:''
     }

@@ -12,7 +12,7 @@ export default function About() {
         <p className="lead mt-4 text-center">
           Full stack web developer with background in chemical engineering👩‍🔬,
           currently in search of internship or junior developer role in order to expand
-          skills and experience in the field. Strong technical understanding in multiple
+          skills and experience in the field. <br /> Strong technical understanding in multiple
           languages, detail oriented, and ability to learn new concepts quickly.
         </p>
       </div>

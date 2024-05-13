@@ -12,4 +12,11 @@
   height: 5em;
   margin-left: 30px;
   margin-right: 30px;
+  will-change: filter;
+  transition: filter 300ms;
 }
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
