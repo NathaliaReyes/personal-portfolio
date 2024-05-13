@@ -5,16 +5,12 @@
 
 html, body {
   font-size: 18px;
-  background-color: #000000;
 }
 
-.main-content {
-  margin-bottom: 10em; /* Ajusta este valor según la altura de tu pie de página */
-}
 
 .profile-footer {
   text-align: center;
-  position: fixed;
+  /* position: fixed; */
   inset: auto 0 0 0;
   padding: 1em;
 }

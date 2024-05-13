@@ -8,12 +8,11 @@
   font-family: "Tangerine", cursive;
   font-weight: 700;
   font-style: normal;
-
+  font-size: 30px !important;
 }
 
 .navbar-nav {
   margin-left: auto;
   text-align: center;
 }
-
 

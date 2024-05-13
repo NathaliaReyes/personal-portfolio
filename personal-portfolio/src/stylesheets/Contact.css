@@ -1,25 +1,16 @@
-/* .create {
-    max-width: 400px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .create label {
-    text-align: left;
-    display: block;
-  } */
-  .create h1 {
-    padding: 20px;
-    font-size: 25px;
-    color: #f1356d;
-    margin-bottom: 10px;
-  }
-  
-  .create button {
-    background: #f1356d;
-    color: #fff;
-    /* border: 0; */
-    padding: 8px;
-    border-radius: 8px;
-    cursor: pointer;
-    display: inline-block;
-  }
+.create h1 {
+  padding: 20px;
+  font-size: 25px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+
+.create button {
+  background: #FE2860;
+  color: #fff;
+  /* border: 0; */
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+}

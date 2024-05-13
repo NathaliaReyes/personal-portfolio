@@ -47,13 +47,13 @@ function Recommendation() {
     return (
       <section className='bg-light  m-5'>
         <div className='container'>
-          <div className='row border border-info'>
+          <div className='row border border-info rounded'>
             <div className='col-lg-3 col-12 img-container'>
-              <img className='recommendation-image' src={image} alt={`image-${props.image}`} />
+              <img className='recommendation-image rounded-circle' src={image} alt={`image-${props.image}`} />
             </div>
             <div className='col-lg-9 col-12'> 
               <div className='mt-3'>
-                <p className='h5 text-center'>
+                <p className='h6 text-center'>
                   <strong>{props.name}</strong> in {props.country}
                 </p>
                 <p className='text-secondary text-center'>
@@ -73,8 +73,8 @@ function Recommendation() {
 
   return (
     <div>
-      <div className='container'>
-        <h1>Recommendations:</h1>
+      <div className='container mt-4'>
+        <h3>Recommendations:</h3>
         {recommendations.map((recommendation, index) => (
           <LinkedInRecommendation
             key={index}
