@@ -1,75 +1,110 @@
 import React, { useState, useEffect } from "react";
 import '../stylesheets/Project.css';
+// import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function Project() {
   const projects = [
     {
       title: 'Coffee-Outlet',
-      features: [
-        'User Registration and Authentication', 
-        'Coffee Shop Creation', 
-        'Feedback System',
+      technologies: [
+        'Express.js',
+        'Node.js',
+        'Handlebars',
+        'PostgreSQL',
+        'Sequelize',
+        'Multer'
       ],
       description: 'An interactive MVC web application catering to coffee aficionados. Users share experiences, post about new coffee shops, and provide feedback, fostering a vibrant community.',
       image: 'coffee-outlet',
       gitHub: 'https://github.com/NathaliaReyes/coffee-outlet.git',
       videoWalthrought: 'https://drive.google.com/file/d/1vU7d2GpcvbSMt_iA-AzY20sFmxL4tfmc/view?usp=sharing',
-      deployed:'https://coffee-outlet.onrender.com/'
+      deployed: 'https://coffee-outlet.onrender.com/'
     },
     {
       title: 'Tech-Blog',
-      features: [
-        'User Registration and Authentication', 
-        'Blog Post Creation', 
-        'Blog Post Viewing'
+      technologies: [
+        'Node.js',
+        'Sequelize.js',
+        'PostgreSQL',
+        'Bcrypt.js',
+        'Express.js',
       ],
-      description: "CMS-style Tech Blog: MVC architecture, user posts, comments. Here, users can seamlessly publish their blog posts, interact with fellow developers contributions, and engage in vibrant discussions. ",
+      description: "CMS-style Tech Blog: MVC architecture, user posts, comments. Here, users can seamlessly publish their blog posts and interact with fellow developers contributions.",
       image: 'tech-blog',
       gitHub: 'https://github.com/NathaliaReyes/tech-blog.git',
       videoWalthrought: '',
-      deployed:''
+      deployed: ''
     },
     {
       title: 'Break-the-Scroll',
-      features: [
-        'uses data from the OPEN TRIVIA DATABASE API by [PIXELTAIL GAMES LLC.], available under the [Creative Commons Attribution-ShareAlike 4.0 International License]', 
-        'uses data from the Bored API by [Bored API], available under the [Creative Commons Attribution-ShareAlike 4.0 International License]', 
-        'jQuery for simplifying HTML document traversal, event handling, and animation.'
+      technologies: [
+        'JQuery',
+        'Bulma',
+        'Vanilla JS',
+        'HTML',
+        'Bored API',
+        'Open Trivia DB'
       ],
       description: 'This webpage is meant to encourage users to stop the mindless scrolling on TikTok, Reddit, Instagram, or whatever media they’re too plugged into. When users scan the QR code, they’re presented with a trivia game that is meant to engage their mind, and then they’re given a suggestion of something to do that’s not on their phone.',
       image: 'trivia-quiz',
       gitHub: 'https://github.com/NathaliaReyes/break-the-scroll.git',
       videoWalthrought: 'https://beckpull.github.io/break-the-scroll/',
-      deployed:''
+      deployed: ''
     },
     {
       title: 'Weather Dashboard',
-      features: ['', '', ''],
+      technologies: [
+        'Vanilla JS', 
+        'JQuery', 
+        'SweetAlert',
+        'OpenWeather API',
+        'Bootstrap',
+        'Day.js'
+      ],
       description: 'This Weather Dashboard project is a practical application that empowers users to check the current weather and forecast for their preferred cities. Offering real-time weather data and a 5-day forecast, users can plan their activities effectively. The app includes a favorites feature for saving frequently visited cities, ensuring quick access.',
       image: 'weather-dashboard',
       gitHub: 'https://github.com/NathaliaReyes/weather-dashboard.git',
       videoWalthrought: '',
-      deployed:'https://nathaliareyes.github.io/weather-dashboard/'
+      deployed: 'https://nathaliareyes.github.io/weather-dashboard/'
     },
     {
       title: 'Sales Management',
-      features: ['', '', ''],
+      technologies: [
+        'Java', 
+        'Spring Boot', 
+        'MySQL',
+        'Hibernate',
+        'Maven',
+        'Postman'
+      ],
       description: 'This is a REST API developed in Java using Spring Boot, designed to streamline standard processes in commercial transactions for products, including sales recording and stock management.',
       image: 'sales-management',
       gitHub: 'https://github.com/NathaliaReyes/SalesManagement.git',
       videoWalthrought: '',
-      deployed:''
+      deployed: ''
     },
     {
       title: 'Spa Database',
-      features: ['', '', ''],
-      description: 'This project creates a relational database for a spa, managing client transactions like service bookings and product purchases. It simplifies operations and enhances the customer and employee experience. MySQL Workbench is used for development.',
+      technologies: [
+        'MySQL', 
+        'Workbench', 
+        'POWER BI',
+      ],
+      description: 'This project creates a relational database for a spa, managing client transactions like service bookings and product purchases. It simplifies operations and enhances the customer and employee experience.',
       image: 'spa-db',
       gitHub: 'https://github.com/NathaliaReyes/spa-mysql-db.git',
       videoWalthrought: '',
-      deployed:''
+      deployed: ''
     }
   ]
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // You can also add a global duration
+    });
+  }, []);
 
   function ProjectsToShow(props) {
 
@@ -85,21 +120,37 @@ function Project() {
         });
     }, [props.image]);
 
-  return (
-    <div className="col-md-6 mb-3">
+    return (
+      <div className="col-md-6 mb-3">
         <div className="card border border-secondary">
           <img className="card-img-top img-fluid img-project" src={image} alt="Project Picture" />
           <div className="card-body">
             <h5 className="card-title">{props.title}</h5>
             <p className="card-text">{props.description}</p>
+            <div className="row">
+              <div className="col-sm-12 col-md-6 text-center text-danger">
+                <ul data-aos="fade-right" className="feature_list">
+                  <li>{props.technologies[0]}</li>
+                  <li>{props.technologies[1]}</li>
+                  <li>{props.technologies[2]}</li>
+                </ul>
+              </div>
+              <div className="col-sm-12 col-md-6 text-center text-primary">
+                <ul data-aos="fade-left" className="feature_list">
+                  <li>{props.technologies[3]}</li>
+                  <li>{props.technologies[4]}</li>
+                  <li>{props.technologies[5]}</li>
+                </ul>
+              </div>
+            </div>
             <a href={props.videoWalthrought} target="_blank"><i className="fas fa-video"></i></a>
             <a href={props.gitHub} target="_blank"><i className="fab fa-github"></i></a>
             <a href={props.deployed} target="_blank"><i className="fas fa-external-link-alt"></i></a>
           </div>
         </div>
-    </div>
-  )
-}
+      </div>
+    )
+  }
 
   return (
     <div>
@@ -108,7 +159,7 @@ function Project() {
           <ProjectsToShow
             key={index}
             title={project.title}
-            features={project.features}
+            technologies={project.technologies}
             image={project.image}
             gitHub={project.gitHub}
             videoWalthrought={project.videoWalthrought}
