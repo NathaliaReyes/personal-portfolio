@@ -49,12 +49,22 @@ function Contact() {
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
 
+
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Your message has been sent!',
+      text: 'Thank you for reaching out. Silvia will be in touch with you shortly.',
+      showConfirmButton: false,
+      timer: 3000,
+      timerProgressBar: true,
+    });
+
     setNombre('');
     setLastName('');
     setEmail('');
     setBody('');
     setInquiry('General Inquiry')
-    alert(`Hello ${nombre} I received your message: ${message} and I will reply to you at ${email} as soon as possible. Thank you for reaching out to me!`);
   };
 
   return (
@@ -127,7 +137,11 @@ function Contact() {
               <option value='Report a Bug or Issue'>Report a Bug or Issue</option>
             </select>
             <div>
-              <button type='submit' className='btn btn-primary mb-3'>Contact Silvia</button>
+              <button
+                type='submit'
+                className='btn btn-primary mb-3'>
+                Contact Silvia
+              </button>
             </div>
           </form>
           {errorMessage && (
