@@ -13,13 +13,13 @@ function Contact() {
     <div className='container-form mt-4 mb-4 mb-2 rounded ml-5 mr-5'>
 
       <div className='container pt-3 text-center col-12 pl-5 pr-5 rounded ml-5 mr-5'>
-        <p>Interested in getting in touch? You're welcome to reach out via LinkedIn, GitHub, or email. 
+          <h3 className='text-dark'>
+            Want to connect?
+          </h3>
+        <p>You're welcome to reach out via LinkedIn, GitHub, or email. 
           Alternatively, you can simply fill out the form below to send a message. 
           Excited to connect with you!</p>
         <div className="create col-12">
-          <h1 className='text-dark mb-0 mt-0'>
-            Want to connect?
-          </h1>
           <form className='row g-2'>
             <div className='col-md-6'>
               <label className='form-label h6'>First Name:</label>

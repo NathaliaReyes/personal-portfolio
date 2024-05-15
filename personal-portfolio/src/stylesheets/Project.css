@@ -13,3 +13,11 @@ header {
 .feature_list {
   list-style-type: none;
 }
+
+.text-pink {
+  color: #FE2860;
+}
+
+.mr-4-important {
+  margin-right: 0.5rem !important;
+}

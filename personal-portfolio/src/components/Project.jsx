@@ -34,8 +34,8 @@ function Project() {
       description: "CMS-style Tech Blog: MVC architecture, user posts, comments. Here, users can seamlessly publish their blog posts and interact with fellow developers contributions.",
       image: 'tech-blog',
       gitHub: 'https://github.com/NathaliaReyes/tech-blog.git',
-      videoWalkthrought: '',
-      deployed: ''
+      videoWalkthrought: 'https://tech-blog-p9ue.onrender.com',
+      deployed: 'https://tech-blog-p9ue.onrender.com'
     },
     {
       title: 'Break-the-Scroll',
@@ -51,7 +51,7 @@ function Project() {
       image: 'trivia-quiz',
       gitHub: 'https://github.com/NathaliaReyes/break-the-scroll.git',
       videoWalkthrought: 'https://beckpull.github.io/break-the-scroll/',
-      deployed: ''
+      deployed: 'https://beckpull.github.io/break-the-scroll/'
     },
     {
       title: 'Weather Dashboard',
@@ -66,7 +66,7 @@ function Project() {
       description: 'This Weather Dashboard project is a practical application that empowers users to check the current weather and forecast for their preferred cities. Offering real-time weather data and a 5-day forecast, users can plan their activities effectively. The app includes a favorites feature for saving frequently visited cities, ensuring quick access.',
       image: 'weather-dashboard',
       gitHub: 'https://github.com/NathaliaReyes/weather-dashboard.git',
-      videoWalkthrought: '',
+      videoWalkthrought: 'https://nathaliareyes.github.io/weather-dashboard/',
       deployed: 'https://nathaliareyes.github.io/weather-dashboard/'
     },
     {
@@ -82,8 +82,8 @@ function Project() {
       description: 'This is a REST API developed in Java using Spring Boot, designed to streamline standard processes in commercial transactions for products, including sales recording and stock management.',
       image: 'sales-management',
       gitHub: 'https://github.com/NathaliaReyes/SalesManagement.git',
-      videoWalkthrought: '',
-      deployed: ''
+      videoWalkthrought: 'https://github.com/NathaliaReyes/SalesManagement.git',
+      deployed: 'https://github.com/NathaliaReyes/SalesManagement.git'
     },
     {
       title: 'Spa Database',
@@ -95,8 +95,8 @@ function Project() {
       description: 'This project creates a relational database for a spa, managing client transactions like service bookings and product purchases. It simplifies operations and enhances the customer and employee experience.',
       image: 'spa-db',
       gitHub: 'https://github.com/NathaliaReyes/spa-mysql-db.git',
-      videoWalkthrought: '',
-      deployed: ''
+      videoWalkthrought: 'https://github.com/NathaliaReyes/spa-mysql-db.git',
+      deployed: 'https://github.com/NathaliaReyes/spa-mysql-db.git'
     }
   ]
 
@@ -128,7 +128,7 @@ function Project() {
             <h5 className="card-title">{props.title}</h5>
             <p className="card-text">{props.description}</p>
             <div className="row">
-              <div className="col-sm-12 col-md-6 text-center text-danger">
+              <div className="col-sm-12 col-md-6 text-center text-pink">
                 <ul data-aos="fade-right" className="feature_list">
                   <li>{props.technologies[0]}</li>
                   <li>{props.technologies[1]}</li>
@@ -143,9 +143,9 @@ function Project() {
                 </ul>
               </div>
             </div>
-            <a href={props.videoWalkthrought} target="_blank"><i className="fas fa-video"></i></a>
-            <a href={props.gitHub} target="_blank"><i className="fab fa-github"></i></a>
-            <a href={props.deployed} target="_blank"><i className="fas fa-external-link-alt"></i></a>
+            <a href={props.videoWalkthrought} target="_blank" className="d-inline-block mr-4-important"><i className="fas fa-video text-muted"></i></a>
+            <a href={props.gitHub} target="_blank" className="d-inline-block mr-4-important"><i className="fab fa-github text-muted"></i></a>
+            <a href={props.deployed} target="_blank" className="d-inline-block mr-4-important"><i className="fas fa-external-link-alt text-muted"></i></a>
           </div>
         </div>
       </div>
