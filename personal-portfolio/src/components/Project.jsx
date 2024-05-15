@@ -19,7 +19,7 @@ function Project() {
       description: 'An interactive MVC web application catering to coffee aficionados. Users share experiences, post about new coffee shops, and provide feedback, fostering a vibrant community.',
       image: 'coffee-outlet',
       gitHub: 'https://github.com/NathaliaReyes/coffee-outlet.git',
-      videoWalthrought: 'https://drive.google.com/file/d/1vU7d2GpcvbSMt_iA-AzY20sFmxL4tfmc/view?usp=sharing',
+      videoWalkthrought: 'https://drive.google.com/file/d/1vU7d2GpcvbSMt_iA-AzY20sFmxL4tfmc/view?usp=sharing',
       deployed: 'https://coffee-outlet.onrender.com/'
     },
     {
@@ -34,7 +34,7 @@ function Project() {
       description: "CMS-style Tech Blog: MVC architecture, user posts, comments. Here, users can seamlessly publish their blog posts and interact with fellow developers contributions.",
       image: 'tech-blog',
       gitHub: 'https://github.com/NathaliaReyes/tech-blog.git',
-      videoWalthrought: '',
+      videoWalkthrought: '',
       deployed: ''
     },
     {
@@ -50,7 +50,7 @@ function Project() {
       description: 'This webpage is meant to encourage users to stop the mindless scrolling on TikTok, Reddit, Instagram, or whatever media they’re too plugged into. When users scan the QR code, they’re presented with a trivia game that is meant to engage their mind, and then they’re given a suggestion of something to do that’s not on their phone.',
       image: 'trivia-quiz',
       gitHub: 'https://github.com/NathaliaReyes/break-the-scroll.git',
-      videoWalthrought: 'https://beckpull.github.io/break-the-scroll/',
+      videoWalkthrought: 'https://beckpull.github.io/break-the-scroll/',
       deployed: ''
     },
     {
@@ -66,7 +66,7 @@ function Project() {
       description: 'This Weather Dashboard project is a practical application that empowers users to check the current weather and forecast for their preferred cities. Offering real-time weather data and a 5-day forecast, users can plan their activities effectively. The app includes a favorites feature for saving frequently visited cities, ensuring quick access.',
       image: 'weather-dashboard',
       gitHub: 'https://github.com/NathaliaReyes/weather-dashboard.git',
-      videoWalthrought: '',
+      videoWalkthrought: '',
       deployed: 'https://nathaliareyes.github.io/weather-dashboard/'
     },
     {
@@ -82,7 +82,7 @@ function Project() {
       description: 'This is a REST API developed in Java using Spring Boot, designed to streamline standard processes in commercial transactions for products, including sales recording and stock management.',
       image: 'sales-management',
       gitHub: 'https://github.com/NathaliaReyes/SalesManagement.git',
-      videoWalthrought: '',
+      videoWalkthrought: '',
       deployed: ''
     },
     {
@@ -95,7 +95,7 @@ function Project() {
       description: 'This project creates a relational database for a spa, managing client transactions like service bookings and product purchases. It simplifies operations and enhances the customer and employee experience.',
       image: 'spa-db',
       gitHub: 'https://github.com/NathaliaReyes/spa-mysql-db.git',
-      videoWalthrought: '',
+      videoWalkthrought: '',
       deployed: ''
     }
   ]
@@ -143,7 +143,7 @@ function Project() {
                 </ul>
               </div>
             </div>
-            <a href={props.videoWalthrought} target="_blank"><i className="fas fa-video"></i></a>
+            <a href={props.videoWalkthrought} target="_blank"><i className="fas fa-video"></i></a>
             <a href={props.gitHub} target="_blank"><i className="fab fa-github"></i></a>
             <a href={props.deployed} target="_blank"><i className="fas fa-external-link-alt"></i></a>
           </div>
@@ -162,7 +162,7 @@ function Project() {
             technologies={project.technologies}
             image={project.image}
             gitHub={project.gitHub}
-            videoWalthrought={project.videoWalthrought}
+            videoWalkthrought={project.videoWalkthrought}
             description={project.description}
             deployed={project.deployed}
           />

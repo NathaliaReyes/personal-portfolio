@@ -17,8 +17,7 @@ export default function Resume() {
 
   return (
     <div>
-      <h1 className='text-center text-primary mt-3'>Mi Currículum</h1>
-      <div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}> 
         <Document
           file={cvPdf}
           onLoadSuccess={onDocumentLoadSuccess}
@@ -27,7 +26,6 @@ export default function Resume() {
             <Page key={`page_${index + 1}`} pageNumber={index + 1} scale={1.5} />
           ))}
         </Document>
-        <p>Página {pageNumber} de {numPages}</p>
       </div>
     </div>
   );

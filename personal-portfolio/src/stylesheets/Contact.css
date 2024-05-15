@@ -1,14 +1,12 @@
 .create h1 {
   padding: 20px;
   font-size: 25px;
-  color: #f1356d;
   margin-bottom: 10px;
 }
 
 .create button {
-  background: #FE2860;
+  background: #164175;
   color: #fff;
-  /* border: 0; */
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
