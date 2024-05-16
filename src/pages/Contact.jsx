@@ -4,7 +4,7 @@ import '../stylesheets/Contact.css';
 import { validateEmail } from '../utils/helpers';
 
 function Contact() {
-  // Here we set two state variables for firstName and lastName using `useState`
+  // Here we set the initial state of the form inputs
   const [nombre, setNombre] = useState('');
   const [lastname, setLastName] = useState('');
   const [email, setEmail] = useState('');
