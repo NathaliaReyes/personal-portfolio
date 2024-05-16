@@ -28,7 +28,7 @@ The application is deployed on Netlify, offering a user-friendly interface that 
 
 ## Viewing the Portfolio
 
-You can view the live portfolio at [your-portfolio-url.com](http://your-portfolio-url.com).
+You can view the live portfolio at [MyPortfolio](https://silviareyes.netlify.app/).
 
 ## Overview
 ![Homepage](./src/images/homepage.png "Homepage section")
