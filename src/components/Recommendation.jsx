@@ -45,7 +45,7 @@ function Recommendation() {
     }, [props.image]);
 
     return (
-      <section className='bg-light  m-5'>
+      <section className='bg-light mt-2 mb-3'>
         <div className='container'>
           <div className='row border border-info rounded'>
             <div className='col-lg-3 col-12 img-container'>
