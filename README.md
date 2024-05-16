@@ -1,6 +1,6 @@
 # 💼personal portfolio
 
-Welcome to the personal portfolio of Silvia Reyes, a comprehensive showcase of my work and skills. This portfolio is a single-page application built using React and Node.js, featuring a polished user interface with engaging animations. The portfolio is divided into four main sections: About Me, Portfolio, Contact, and Resumé.
+Welcome to my Portfolio👩🏻‍💻, a comprehensive showcase of my work and skills. This portfolio is a single-page application built using React and Node.js, featuring a polished user interface with engaging animations. The portfolio is divided into four main sections: About Me, Portfolio, Contact, and Resumé.
 
 Upon opening the application, you're greeted with the About Me section, providing a brief introduction and highlighting my professional journey. The Portfolio section showcases my work samples, demonstrating my experience and proficiency in building single-page applications. The Contact section offers a direct line of communication through a form, and the Resumé section includes a downloadable copy of my resumé for further details about my qualifications.
 
@@ -10,7 +10,7 @@ The portfolio is built using React.js for building the user interface, along wit
 
 The application also includes the ability to view PDFs using the React-PDF library. The project is set up with Vite, which provides a faster and leaner development experience. 
 
-The application is deployed on Vercel/Netlify (choose as per your deployment), offering a user-friendly interface that makes it easy for visitors to navigate through the developer's portfolio.
+The application is deployed on Netlify, offering a user-friendly interface that makes it easy for visitors to navigate through this project.
 
 
 ## Table of Contents
@@ -18,6 +18,8 @@ The application is deployed on Vercel/Netlify (choose as per your deployment), o
   - [Table of Contents](#table-of-contents)
   - [Viewing the Portfolio](#viewing-the-portfolio)
   - [Overview](#overview)
+  - [](#)
+  - [](#-1)
   - [Portfolio Appearance](#portfolio-appearance)
   - [Credits](#credits)
     - [📚Acknowledgements](#acknowledgements)
@@ -30,7 +32,11 @@ The application is deployed on Vercel/Netlify (choose as per your deployment), o
 You can view the live portfolio at [your-portfolio-url.com](http://your-portfolio-url.com).
 
 ## Overview
-![alt text](url-to-image "Optional title")
+![Homepage](../personal-portfolio/src/images/homepage.png "Homepage section")
+---
+![Portfolio](../personal-portfolio/src/images/projects.png "Projects section")
+---
+![Form](../personal-portfolio/src/images/form.png "Contact section")
 
 In this portfolio, you'll find:
 
@@ -93,5 +99,5 @@ I'm always open to discussions and eager to help. Don't hesitate to get in touch
 
 
 
-***Thanks for stopping!***
+***Thanks for stopping!🤍***
 
