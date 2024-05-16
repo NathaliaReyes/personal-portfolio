@@ -20,7 +20,6 @@ The application is deployed on Netlify, offering a user-friendly interface that 
   - [Overview](#overview)
   - [](#)
   - [](#-1)
-  - [Portfolio Appearance](#portfolio-appearance)
   - [Credits](#credits)
     - [📚Acknowledgements](#acknowledgements)
   - [License](#license)
@@ -32,11 +31,11 @@ The application is deployed on Netlify, offering a user-friendly interface that 
 You can view the live portfolio at [your-portfolio-url.com](http://your-portfolio-url.com).
 
 ## Overview
-![Homepage](../personal-portfolio/src/images/homepage.png "Homepage section")
+![Homepage](./src/images/homepage.png "Homepage section")
 ---
-![Portfolio](../personal-portfolio/src/images/projects.png "Projects section")
+![Portfolio](./src/images/projects.png "Projects section")
 ---
-![Form](../personal-portfolio/src/images/form.png "Contact section")
+![Form](./src/images/form.png "Contact section")
 
 In this portfolio, you'll find:
 
@@ -46,8 +45,6 @@ In this portfolio, you'll find:
 4. **Resume:** A link to a downloadable resume and a list of my proficiencies.
 
 You can navigate to these sections using the menu in the header. The title corresponding to the current section is highlighted.
-
-## Portfolio Appearance
 
 ## Credits
 
