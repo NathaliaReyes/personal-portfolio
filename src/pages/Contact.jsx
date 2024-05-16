@@ -77,6 +77,10 @@ function Contact() {
         <p>You're welcome to reach out via LinkedIn, GitHub, or email.
           Alternatively, you can simply fill out the form below to send a message.
           Excited to connect with you!</p>
+          <div>
+            <p><i className='fas fa-envelope'></i>snrvdevelopment@gmail.com</p>
+            <p><i className='fas fa-phone'></i>+1(720)-885-7042</p>
+          </div>
         <div className="create col-12">
           <form className='row g-2 form' onSubmit={handleFormSubmit}>
             <div className='col-md-6'>
