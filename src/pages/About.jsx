@@ -12,7 +12,7 @@ import salsaImg from '../images/salsa-lover.png'
 export default function About() {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // You can also add a global duration
+      duration: 2000,
     });
   }, []);
 
