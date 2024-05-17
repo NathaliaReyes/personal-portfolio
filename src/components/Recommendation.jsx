@@ -58,7 +58,7 @@ function Recommendation() {
                 <p className='text-secondary text-center'>
                   {props.role} at <strong>{props.company}</strong>
                 </p>
-                <p className='text-justify parrafo'>
+                <p className='text-justify parrafo paragraph'>
                   "{props.text}"
                 </p>
               </div>

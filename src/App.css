@@ -13,4 +13,9 @@ html, body {
   /* position: fixed; */
   inset: auto 0 0 0;
   padding: 1em;
+  font-size: .4em;
+}
+
+.profile-footer a:hover i {
+  color: #c2e3f1; /* Change to the color you want */
 }

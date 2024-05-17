@@ -126,7 +126,7 @@ function Project() {
           <img className="card-img-top img-fluid img-project" src={image} alt="Project Picture" />
           <div className="card-body border-top">
             <h5 className="card-title cormorant-garamond-semibold">{props.title}</h5>
-            <p className="card-text cormorant-garamond-medium">{props.description}</p>
+            <p className="card-text cormorant-garamond-medium paragraph">{props.description}</p>
             <div className="row">
               <div className="col-sm-12 col-md-6 text-center text-pink">
                 <ul data-aos="fade-right" className="feature_list">

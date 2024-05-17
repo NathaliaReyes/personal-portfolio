@@ -21,11 +21,11 @@ export default function About() {
       <div>
         <h1 className="cormorant-garamond-bold">About Me</h1>
         <img className="img-silvia" src={image} alt="Image Silvia" />
-        <p className="cormorant-garamond-medium mt-4 text-justify">
+        <p className="cormorant-garamond-medium mt-4 text-justify paragraph">
           Hi! I am Silvia Reyes, a Colombian-born developer currently living in the USA.
-          After studying chemical engineering for three years.
+          After studying chemical engineering for three years,
           I became interested in computer science and began coding in 2022. I am particularly
-          interested in developing web apps with polished UI using MERN technologies, and BackEnd programming using databases.
+          interested in developing web apps with polished UI using MERN technologies, and Backend programming using databases.
           In my free time, I enjoy getting outside, salsa dancing, and learning new languages. <br />
         </p>
         <p className="lead text-center cormorant-garamond-medium">

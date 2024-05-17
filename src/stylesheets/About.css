@@ -88,4 +88,6 @@
   font-style: italic;
 }
 
-
+.paragraph {
+  text-align: justify;
+}
