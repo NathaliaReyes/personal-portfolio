@@ -73,7 +73,7 @@ function Recommendation() {
   return (
     <div>
       <div className='container mt-4'>
-        <h3>Recommendations:</h3>
+        <h3 className='cormorant-garamond-bold'>Recommendations:</h3>
         {recommendations.map((recommendation, index) => (
           <LinkedInRecommendation
             key={index}

@@ -71,20 +71,20 @@ function Contact() {
     <div className='container-form mt-4 mb-4 mb-2 rounded ml-5 mr-5'>
 
       <div className='container pt-3 text-center col-12 pl-5 pr-5 rounded ml-5 mr-5'>
-        <h3 className='text-dark'>
+        <h3 className='text-dark cormorant-garamond-bold'>
           Want to connect?
         </h3>
-        <p>You're welcome to reach out via LinkedIn, GitHub, or email.
+        <p className='cormorant-garamond-medium'>You're welcome to reach out via LinkedIn, GitHub, or email.
           Alternatively, you can simply fill out the form below to send a message.
           Excited to connect with you!</p>
           <div>
-            <p><i className='fas fa-envelope'></i>snrvdevelopment@gmail.com</p>
-            <p><i className='fas fa-phone'></i>+1(720)-885-7042</p>
+            <p className='cormorant-garamond-bold'><i className='fas fa-envelope'></i> snrvdevelopment@gmail.com</p>
+            <p className='cormorant-garamond-bold'><i className='fas fa-phone'></i>+1(720)-885-7042</p>
           </div>
         <div className="create col-12">
           <form className='row g-2 form' onSubmit={handleFormSubmit}>
             <div className='col-md-6'>
-              <label className='form-label h6'>First Name:</label>
+              <label className='form-label h6 cormorant-garamond-semibold'>First Name:</label>
               <input
                 className='form-control'
                 value={nombre}
@@ -96,7 +96,7 @@ function Contact() {
               />
             </div>
             <div className='col-md-6'>
-              <label className='form-label h6'>Last Name:</label>
+              <label className='form-label h6 cormorant-garamond-semibold'>Last Name:</label>
               <input
                 className='form-control'
                 value={lastname}
@@ -108,7 +108,7 @@ function Contact() {
               />
 
             </div>
-            <label className='form-label h6'>Email:</label>
+            <label className='form-label h6 cormorant-garamond-semibold'>Email:</label>
             <input
               className='form-control'
               value={email}
@@ -118,7 +118,7 @@ function Contact() {
               type="email"
               placeholder='Email Address'
             />
-            <label className='form-label h6'>Message:</label>
+            <label className='form-label h6 cormorant-garamond-semibold'>Message:</label>
             <textarea
               className='form-control'
               required
@@ -127,7 +127,7 @@ function Contact() {
               onChange={handleInputChange}
               type='text'
             ></textarea>
-            <label className='form-label h6'>Reason for Contact:</label>
+            <label className='form-label h6 cormorant-garamond-semibold'>Reason for Contact:</label>
             <select
               className='form-select form-control'
               required
@@ -143,7 +143,7 @@ function Contact() {
             <div>
               <button
                 type='submit'
-                className='btn btn-primary mb-3'>
+                className='btn btn-primary mb-3 cormorant-garamond-medium'>
                 Contact Silvia
               </button>
             </div>

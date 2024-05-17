@@ -19,39 +19,39 @@ export default function About() {
   return (
     <div className="container pt-3">
       <div>
-        <h1>About Me</h1>
+        <h1 className="cormorant-garamond-bold">About Me</h1>
         <img className="img-silvia" src={image} alt="Image Silvia" />
-        <p className="lead mt-4 text-justify">
+        <p className="cormorant-garamond-medium mt-4 text-justify">
           Hi! I am Silvia Reyes, a Colombian-born developer currently living in the USA.
           After studying chemical engineering for three years.
           I became interested in computer science and began coding in 2022. I am particularly
           interested in developing web apps with polished UI using MERN technologies, and BackEnd programming using databases.
           In my free time, I enjoy getting outside, salsa dancing, and learning new languages. <br />
         </p>
-        <p className="lead text-center">
+        <p className="lead text-center cormorant-garamond-medium">
           I am looking forward to connecting with you and continuing my journey as a developer.
         </p>
 
       </div>
 
       <div className="container mt-4">
-        <h3>Fun Facts</h3>
+        <h3 className="cormorant-garamond-bold">Fun Facts</h3>
         <div className="row">
           <div className="col-sm-12 col-md-4 text-center" data-aos="flip-left">
             <img className="img-fun-fact" src={trilingualImg} alt="Trilingual" />
-            <p className="lead mt-4 text-primary " style={{ fontStyle: 'italic' }} >
+            <p className="lead mt-4 text-primary cormorant-garamond-semibold-italic" style={{ fontStyle: 'italic' }} >
               Trilingual
             </p>
           </div>
           <div className="col-sm-12 col-md-4 text-center" data-aos="flip-right">
             <img className="img-fun-fact" src={hikingImg} alt="Hiking" />
-            <p className="lead mt-4 text-primary" style={{ fontStyle: 'italic' }} >
+            <p className="lead mt-4 text-primary cormorant-garamond-semibold-italic" style={{ fontStyle: 'italic' }} >
               Nature Lover
             </p>
           </div>
           <div className="col-sm-12 col-md-4 text-center" data-aos="flip-up">
             <img className="img-fun-fact" src={salsaImg} alt="Salsa" />
-            <p className="lead mt-4 text-primary" style={{ fontStyle: 'italic' }} >
+            <p className="lead mt-4 text-primary cormorant-garamond-semibold-italic" style={{ fontStyle: 'italic' }} >
               Salsa Lover
             </p>
           </div>
