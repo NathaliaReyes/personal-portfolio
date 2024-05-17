@@ -12,7 +12,7 @@ export default function Resume() {
   const [pageNumber, setPageNumber] = useState(1);
   const [document, setDocument] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
-
+  const [scale, setScale] = useState(1.5);
 
   useEffect(() => {
     const loadingTask = pdfjs.getDocument(cvPdf);
@@ -26,6 +26,16 @@ export default function Resume() {
       error => {
         console.error("Error while loading PDF:", error);
       });
+
+    const handleResize = () => {
+      setScale(window.innerWidth < 600 ? 0.5 : 1.5);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+
   }, []);
 
   if (isLoading) {
@@ -33,14 +43,12 @@ export default function Resume() {
   }
 
   return (
-    <div>
+    <div >
       <a className='mt-4 text-secondary text-right' href={cvPdf} download="Silvia_Reyes_Resume.pdf">Download Resume</a>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <Document
-          file={cvPdf}
-        >
+        <Document file={cvPdf}>
           {Array.from(new Array(numPages), (el, index) => (
-            <Page key={`page_${index + 1}`} pageNumber={index + 1} scale={1.5} />
+            <Page key={`page_${index + 1}`} pageNumber={index + 1} scale={scale} />
           ))}
         </Document>
       </div>

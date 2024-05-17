@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import '../stylesheets/Project.css';
-// import 'animate.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
