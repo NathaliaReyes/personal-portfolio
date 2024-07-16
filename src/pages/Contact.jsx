@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import { useForm } from '@formspree/react';
-import '../stylesheets/Contact.css';
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input'
-// Here we import a helper function that will check if the email is valid
-// import { validateEmail } from '../utils/helpers';
 
 function Contact() {
-  // Here we set the initial state of the form inputs
   const [state, handleSubmitFormspree] = useForm("xzzpzjkp");
   const [firstName, setfirstName] = useState('');
   const [lastName, setlastName] = useState('');
@@ -23,12 +19,8 @@ function Contact() {
   const [phoneRequired, setPhoneRequired] = useState(false);
   const [messageRequired, setMessageRequired] = useState(false);
 
-  // const [errorMessage, setErrorMessage] = useState('');
-
-  const handleInputChange = (event) => {
-    // Getting the value and name of the input which triggered the change
+  const handleChange = (event) => {
     const { name, value } = event.target;
-
     switch (name) {
       case 'firstName':
         setfirstName(value);
@@ -75,7 +67,7 @@ function Contact() {
     }
     setSubmitted(true);
     handleSubmitFormspree(event);
-    document.querySelector('#success-modal').classList.add('is-active');
+    // document.querySelector('#success-modal').classList.add('is-active');
 
   };
 
@@ -86,33 +78,34 @@ function Contact() {
   return (
     <>
       {submitted && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white rounded-lg shadow-lg p-2 text-center relative">
-            <button
-              onClick={() => {
-                setSubmitted(false);
-                window.location.href = '/';
-              }}
-              className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
-            >
-              &times;
-            </button>
-            <h2 className="text-2xl font-bold mb-4">Your message has been delivered!</h2>
-            <p className="text-gray-700 mb-4">Thank you for reaching out - I will get in touch soon!</p>
-            <p className="text-gray-500">✨ Have a splendid day! ✨</p>
-          </div>
-        </div>
-      )}
+  <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center" style={{ zIndex: 50 }}>
+    <div className="bg-white rounded shadow-lg p-2 text-center position-relative">
+      <button
+        onClick={() => {
+          setSubmitted(false);
+          window.location.href = '/';
+        }}
+        className="position-absolute top-0 end-0 m-2 text-secondary hover-text-dark"
+      >
+        &times;
+      </button>
+      <h2 className="fs-3 fw-bold mb-4">Your message has been delivered!</h2>
+      <p className="text-dark mb-4">Thank you for reaching out - I will get in touch soon!</p>
+      <p className="text-secondary">✨ Have a splendid day! ✨</p>
+    </div>
+  </div>
+)}
 
-      <form onSubmit={handleSubmit} className="max-w-3xl mx-auto p-2 bg-white rounded-lg shadow-lg mt-4 mb-4">
+      <form onSubmit={handleSubmit} className="container my-4 p-2 bg-white rounded-lg shadow-lg mt-4 mb-4">
         <div>
-          <p className='lg:text-xl md:text-lg sm:text-base mt-4 ml-10 mr-10 mb-4 text-center'>
-            Want to connect?
-          </p>
-          <p className='lg:text-xl md:text-lg sm:text-base mt-4 ml-10 mr-10 mb-4 text-center'>
-            You're welcome to reach out via LinkedIn, GitHub, or email.
+          <p className="lg:text-xl md:text-lg sm:text-base mt-4 ml-10 mr-10 mb-4 text-center">
+          You're welcome to reach out via LinkedIn, GitHub, or email.
             Alternatively, you can simply fill out the form below to send a message.
-            Excited to connect with you!
+            <br/>Excited to connect with you!
+
+          </p>
+          <p className="lg:text-xl md:text-lg sm:text-base mt-4 ml-10 mr-10 mb-4 text-center">
+            Thank you for choosing Harmony Wellness & Spa for your relaxation and wellness needs.
           </p>
           <p className='cormorant-garamond-bold text-center'><i className='fas fa-envelope'></i>
             snrvdevelopment@gmail.com
@@ -120,50 +113,51 @@ function Contact() {
           <p className='cormorant-garamond-bold text-center'><i className='fas fa-phone'></i>
             +1(720)-885-7042
           </p>
+
           {!fieldsCompleted && <p className="text-red-500 text-xs mt-2">Please fill out all required fields.</p>}
         </div>
         <div className="mb-4 ml-4 mr-4">
-          <label className="d-block text-secondary text-sm font-weight-bold mb-2">Name</label>
+          <label className="block text-gray-700 text-sm font-bold mb-2">Name</label>
           <input
             name="firstName"
             value={firstName}
             className="shadow appearance-none border rounded w-100 py-2 px-3 text-secondary focus:outline-none focus:shadow-outline"
             type="text"
             placeholder="First Name"
-            onChange={handleInputChange}
+            onChange={handleChange}
           />
-          {nameRequired && <p className="text-red-500 text-xs mt-2">Name is required.</p>}
+          {nameRequired && <p className="text-danger mt-2">Name is required.</p>}
         </div>
 
         <div className="mb-4 ml-4 mr-4">
-          <label className="d-block text-secondary text-sm font-weight-bold mb-2">Last Name</label>
+          <label className="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
           <input
             name="lastName"
             value={lastName}
             className="shadow appearance-none border rounded w-100 py-2 px-3 text-secondary focus:outline-none focus:shadow-outline"
             type="text"
             placeholder="Last Name"
-            onChange={handleInputChange}
+            onChange={handleChange}
           />
-          {nameRequired && <p className="text-red-500 text-xs mt-2">Last Name is required.</p>}
+          {nameRequired && <p className="text-danger mt-2">Last Name is required.</p>}
         </div>
 
         <div className="mb-4 ml-4 mr-4">
-          <label className="d-block text-secondary text-sm font-weight-bold mb-2">Email</label>
+          <label className="block text-gray-700 text-sm font-bold mb-2">Email</label>
           <input
             name="email"
             value={email}
             className="shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="email"
             placeholder="email@example.com"
-            onChange={handleInputChange}
+            onChange={handleChange}
           />
-          {emailRequired && <p className="text-red-500 text-xs mt-2">Email is required.</p>}
-          {!emailValid && email && <p className="text-red-500 text-xs mt-2">Please enter a valid email address.</p>}
+          {emailRequired && <p className="text-danger mt-2">Email is required.</p>}
+          {!emailValid && email && <p className="text-danger mt-2">Please enter a valid email address.</p>}
         </div>
 
         <div className="mb-4 ml-4 mr-4">
-          <label className="block text-gray-700 text-sm font-weight-bold mb-2">Phone Number</label>
+          <label className="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
           <PhoneInput
             name="phone"
             value={phone}
@@ -171,16 +165,24 @@ function Contact() {
             className='shadow appearance-none border rounded w-100 py-3 px-3 text-secondary focus:outline-none focus:shadow-outline'
             onChange={handlePhoneChange}
             defaultCountry="US" />
-          {phoneRequired && <p className="text-danger text-xs mt-2">Phone Number is required.</p>}
+            {phoneRequired && <p className="text-danger mt-2">Phone Number is required.</p>}
+          {/* <input
+            name="phone"
+            value={phone}
+            className={`shadow appearance-none border ${!emailValid ? 'border-red-500' : ''} rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
+            type="email"
+            placeholder="email@example.com"
+            onChange={handleChange}
+          /> */}
         </div>
 
         <div className="mb-4 ml-4 mr-4">
-          <label className="d-block text-secondary text-sm font-weight-bold mb-2">I am interested in:</label>
+          <label className="block text-gray-700 text-sm font-bold mb-2">I am interested in:</label>
           <div className="relative">
             <select
               name="inquiry"
               value={inquiry}
-              onChange={handleInputChange}
+              onChange={handleChange}
               className="d-block appearance-none w-100 bg-white border border-secondary hover:border-primary px-4 py-2 pr-8 rounded shadow focus:outline-none focus:shadow-outline"
             >
               <option value="" disabled>I am looking for:</option>
@@ -193,16 +195,16 @@ function Contact() {
           </div>
         </div>
 
-        <div className="mb-3 ml-4 mr-4">
+        <div className="mb-6 ml-4 mr-4">
           <label className="d-block text-secondary text-sm font-weight-bold mb-2">Message</label>
           <textarea
             name="message"
             className="shadow appearance-none border rounded w-100 py-2 px-3 text-dark focus:outline-none focus:shadow-outline"
             placeholder="Message for Silvia Reyes"
             value={message}
-            onChange={handleInputChange}
+            onChange={handleChange}
           ></textarea>
-          {messageRequired && <p className="text-red-500 text-xs mt-2">Message is required.</p>}
+          {messageRequired && <p className="text-danger mt-2">Message is required.</p>}
         </div>
 
         <div className="d-flex align-items-center justify-content-center gap-2">
@@ -214,11 +216,8 @@ function Contact() {
           </button>
         </div>
       </form>
-
-
     </>
   );
 }
-
 
 export default Contact;
