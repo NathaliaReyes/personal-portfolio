@@ -78,40 +78,45 @@ function Contact() {
   return (
     <>
       {submitted && (
-  <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center" style={{ zIndex: 50 }}>
-    <div className="bg-white rounded shadow-lg p-2 text-center position-relative">
-      <button
-        onClick={() => {
-          setSubmitted(false);
-          window.location.href = '/';
-        }}
-        className="position-absolute top-0 end-0 m-2 text-secondary hover-text-dark"
-      >
-        &times;
-      </button>
-      <h2 className="fs-3 fw-bold mb-4">Your message has been delivered!</h2>
-      <p className="text-dark mb-4">Thank you for reaching out - I will get in touch soon!</p>
-      <p className="text-secondary">✨ Have a splendid day! ✨</p>
-    </div>
-  </div>
-)}
+        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center" style={{ zIndex: 50 }}>
+          <div className="bg-white rounded shadow-lg p-2 text-center position-relative">
+            <button
+              onClick={() => {
+                setSubmitted(false);
+                window.location.href = '/';
+              }}
+              className="position-absolute top-0 end-0 m-2 text-secondary hover-text-dark"
+            >
+              &times;
+            </button>
+            <h2 className="fs-3 fw-bold mb-4">Your message has been delivered!</h2>
+            <p className="text-dark mb-4">Thank you for reaching out - I will get in touch soon!</p>
+            <p className="text-secondary">✨ Have a splendid day! ✨</p>
+          </div>
+        </div>
+      )}
 
       <form onSubmit={handleSubmit} className="container my-4 p-2 bg-white rounded-lg shadow-lg mt-4 mb-4">
         <div>
           <p className="lg:text-xl md:text-lg sm:text-base mt-4 ml-10 mr-10 mb-4 text-center">
-          You're welcome to reach out via LinkedIn, GitHub, or email.
+            You're welcome to reach out via LinkedIn, GitHub, or email.
             Alternatively, you can simply fill out the form below to send a message.
-            <br/>Excited to connect with you!
+            <br />Excited to connect with you!
 
           </p>
           <p className="lg:text-xl md:text-lg sm:text-base mt-4 ml-10 mr-10 mb-4 text-center">
             Thank you for choosing Harmony Wellness & Spa for your relaxation and wellness needs.
           </p>
           <p className='cormorant-garamond-bold text-center'><i className='fas fa-envelope'></i>
-            snrvdevelopment@gmail.com
+            <a href="mailto:snrvdevelopment@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+              snrvdevelopment@gmail.com
+            </a>
           </p>
-          <p className='cormorant-garamond-bold text-center'><i className='fas fa-phone'></i>
-            +1(720)-885-7042
+          <p className='cormorant-garamond-bold text-center'>
+            <i className='fas fa-phone'></i>
+            <a href="tel:+17208857042" style={{ textDecoration: 'none', color: 'inherit' }}>
+              +1(720)-885-7042
+            </a>
           </p>
 
           {!fieldsCompleted && <p className="text-red-500 text-xs mt-2">Please fill out all required fields.</p>}
@@ -165,7 +170,7 @@ function Contact() {
             className='shadow appearance-none border rounded w-100 py-3 px-3 text-secondary focus:outline-none focus:shadow-outline'
             onChange={handlePhoneChange}
             defaultCountry="US" />
-            {phoneRequired && <p className="text-danger mt-2">Phone Number is required.</p>}
+          {phoneRequired && <p className="text-danger mt-2">Phone Number is required.</p>}
           {/* <input
             name="phone"
             value={phone}
