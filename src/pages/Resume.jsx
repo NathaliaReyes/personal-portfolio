@@ -43,8 +43,8 @@ export default function Resume() {
   }
 
   return (
-    <div >
-      <a className='mt-4 text-secondary text-right' href={cvPdf} download="Silvia_Reyes_Resume.pdf">Download Resume</a>
+    <div className='pt-4'>
+      <a className='text-blue text-bold text-right' href={cvPdf} download="Silvia_Reyes_Resume.pdf">Download Resume</a>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Document file={cvPdf}>
           {Array.from(new Array(numPages), (el, index) => (

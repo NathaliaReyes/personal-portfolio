@@ -96,20 +96,18 @@ function Contact() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="container my-4 p-2 bg-white rounded-lg shadow-lg mt-4 mb-4">
+      <form onSubmit={handleSubmit} className="container my-2 p-5 bg-white rounded-lg shadow-lg mt-2 mb-4">
         <div>
-          <p className="lg:text-xl md:text-lg sm:text-base mt-4 ml-10 mr-10 mb-4 text-center">
+          <h2 className='cormorant-garamond-bold text-xl text-center'>Get in touch</h2>
+          <p className="lg:text-xl md:text-lg sm:text-base mt-2 ml-10 mr-10 mb-4 text-center">
             You're welcome to reach out via LinkedIn, GitHub, or email.
             Alternatively, you can simply fill out the form below to send a message.
             <br />Excited to connect with you!
 
           </p>
-          <p className="lg:text-xl md:text-lg sm:text-base mt-4 ml-10 mr-10 mb-4 text-center">
-            Thank you for choosing Harmony Wellness & Spa for your relaxation and wellness needs.
-          </p>
           <p className='cormorant-garamond-bold text-center'><i className='fas fa-envelope'></i>
             <a href="mailto:snrvdevelopment@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
-              snrvdevelopment@gmail.com
+               snrvdevelopment@gmail.com
             </a>
           </p>
           <p className='cormorant-garamond-bold text-center'>
@@ -121,7 +119,7 @@ function Contact() {
 
           {!fieldsCompleted && <p className="text-red-500 text-xs mt-2">Please fill out all required fields.</p>}
         </div>
-        <div className="mb-4 ml-4 mr-4">
+        <div className="mb-4 mr-4">
           <label className="block text-gray-700 text-sm font-bold mb-2">Name</label>
           <input
             name="firstName"

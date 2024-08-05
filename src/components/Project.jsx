@@ -7,6 +7,36 @@ import 'aos/dist/aos.css';
 function Project() {
   const projects = [
     {
+      title: 'Harmony Wellness & Spa',
+      technologies: [
+        'React.js',
+        'Node.js',
+        'Express.js',
+        'Dotenv',
+        'Tailwind CSS',
+        'FormSpree'
+      ],
+      description: 'A front-end application for a spa, providing information about services, products, and contact details. It includes a contact form for inquiries.',
+      image: 'harmony_spa',
+      gitHub: 'https://github.com/NathaliaReyes/spa_ws.git',
+      deployed: 'https://harmonywellnessandspa.netlify.app/'
+    },
+    {
+      title: 'Community Aerosports',
+      technologies: [
+        'Node.js',
+        'Express.js',
+        'React.js',
+        'FormSpree',
+        'Dotenv',
+        'Tailwind CSS'
+      ],
+      description: 'A React-based website using shadcn/ui components to connect with an expert flight instructor and learn about his services.',
+      image: 'community',
+      gitHub: 'https://github.com/NathaliaReyes/community-aerosports.git',
+      deployed: 'https://communityaerosports.netlify.app/'
+    },
+    {
       title: 'Coffee-Outlet',
       technologies: [
         'Express.js',
@@ -125,7 +155,7 @@ function Project() {
         <div className="card border border-secondary">
           <img className="card-img-top img-fluid img-project" src={image} alt="Project Picture" />
           <div className="card-body border-top">
-            <h5 className="card-title cormorant-garamond-semibold">{props.title}</h5>
+            <h5 className="card-title cormorant-garamond-bold">{props.title}</h5>
             <p className="card-text cormorant-garamond-medium paragraph">{props.description}</p>
             <div className="row">
               <div className="col-sm-12 col-md-6 text-center text-pink">
