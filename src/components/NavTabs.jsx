@@ -33,7 +33,7 @@ function NavTabs() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
-            <li className="tangerine-regular nav-item">
+            <li className="cormorant-infant-regular nav-item">
               <Link
                 to="/"
                 // This is a conditional (ternary) operator that checks to see if the current page is "Home"
@@ -43,7 +43,7 @@ function NavTabs() {
                 About Me
               </Link>
             </li>
-            <li className="tangerine-regular nav-item">
+            <li className="cormorant-infant-regular nav-item">
               <Link
                 to="/Portfolio"
                 // Check to see if the currentPage is `Portfolio`, and if so we use the active link className from bootstrap. Otherwise, we set it to a normal nav-link
@@ -52,7 +52,7 @@ function NavTabs() {
                 Portfolio
               </Link>
             </li>
-            <li className="tangerine-regular nav-item">
+            <li className="cormorant-infant-regular nav-item">
               <Link
                 to="/MyBlog"
                 // Check to see if the currentPage is `MyBlog`, and if so we use the active link className from bootstrap. Otherwise, we set it to a normal nav-link
@@ -61,7 +61,7 @@ function NavTabs() {
                 My Blog
               </Link>
             </li>
-            <li className="tangerine-regular nav-item">
+            <li className="cormorant-infant-regular nav-item">
               <Link
                 to="/Resume"
                 // Check to see if the currentPage is `Contact`, and if so we use the active link className from bootstrap. Otherwise, we set it to a normal nav-link
@@ -70,7 +70,7 @@ function NavTabs() {
                 Resumé
               </Link>
             </li>
-            <li className="tangerine-regular nav-item">
+            <li className="cormorant-infant-regular nav-item">
               <Link
                 to="/Contact"
                 // Check to see if the currentPage is `Contact`, and if so we use the active link className from bootstrap. Otherwise, we set it to a normal nav-link
