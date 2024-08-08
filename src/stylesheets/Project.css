@@ -21,3 +21,28 @@ header {
 .mr-4-important {
   margin-right: 0.5rem !important;
 }
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img-tooltip {
+  position: absolute;
+  bottom: 0px; /* Adjust to position above or below the image */
+  left: 0%;
+  /* transform: translateX(-50%); */
+  background-color:#81d9f7;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.img-container:hover .img-tooltip {
+  opacity: 1;
+}

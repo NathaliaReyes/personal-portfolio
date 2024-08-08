@@ -98,19 +98,19 @@ function Contact() {
 
       <form onSubmit={handleSubmit} className="container my-2 p-5 bg-white rounded-lg shadow-lg mt-2 mb-4">
         <div>
-          <h2 className='cormorant-garamond-bold text-xl text-center'>Get in touch</h2>
-          <p className="lg:text-xl md:text-lg sm:text-base mt-2 ml-10 mr-10 mb-4 text-center">
+          <h2 className='cormorant-infant-bold text-xl text-center'>Get in touch</h2>
+          <p className="cormorant-infant-semibold lg:text-xl md:text-lg sm:text-base mt-2 ml-10 mr-10 mb-4 text-center">
             You're welcome to reach out via LinkedIn, GitHub, or email.
             Alternatively, you can simply fill out the form below to send a message.
             <br />Excited to connect with you!
 
           </p>
-          <p className='cormorant-garamond-bold text-center'><i className='fas fa-envelope'></i>
+          <p className='cormorant-infant-bold text-center'><i className='fas fa-envelope'></i>
             <a href="mailto:snrvdevelopment@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
-               snrvdevelopment@gmail.com
+              snrvdevelopment@gmail.com
             </a>
           </p>
-          <p className='cormorant-garamond-bold text-center'>
+          <p className='cormorant-infant-bold text-center'>
             <i className='fas fa-phone'></i>
             <a href="tel:+17208857042" style={{ textDecoration: 'none', color: 'inherit' }}>
               +1(720)-885-7042
@@ -119,38 +119,40 @@ function Contact() {
 
           {!fieldsCompleted && <p className="text-red-500 text-xs mt-2">Please fill out all required fields.</p>}
         </div>
-        <div className="mb-4 mr-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Name</label>
-          <input
-            name="firstName"
-            value={firstName}
-            className="shadow appearance-none border rounded w-100 py-2 px-3 text-secondary focus:outline-none focus:shadow-outline"
-            type="text"
-            placeholder="First Name"
-            onChange={handleChange}
-          />
-          {nameRequired && <p className="text-danger mt-2">Name is required.</p>}
+        <div className='row'>
+          <div className="col-12 col-sm-6 mb-4 mr-4">
+            <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Name</label>
+            <input
+              name="firstName"
+              value={firstName}
+              className="cormorant-infant-light shadow border rounded w-100 py-2 px-3 text-secondary focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="First Name"
+              onChange={handleChange}
+            />
+            {nameRequired && <p className="text-danger mt-2">Name is required.</p>}
+          </div>
+
+          <div className="col-12 col-sm-6 mb-4 ml-4 mr-4">
+            <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Last Name</label>
+            <input
+              name="lastName"
+              value={lastName}
+              className="cormorant-infant-light shadow border rounded w-100 py-2 px-3 text-secondary focus:outline-none focus:shadow-outline"
+              type="text"
+              placeholder="Last Name"
+              onChange={handleChange}
+            />
+            {nameRequired && <p className="text-danger mt-2">Last Name is required.</p>}
+          </div>
         </div>
 
         <div className="mb-4 ml-4 mr-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Last Name</label>
-          <input
-            name="lastName"
-            value={lastName}
-            className="shadow appearance-none border rounded w-100 py-2 px-3 text-secondary focus:outline-none focus:shadow-outline"
-            type="text"
-            placeholder="Last Name"
-            onChange={handleChange}
-          />
-          {nameRequired && <p className="text-danger mt-2">Last Name is required.</p>}
-        </div>
-
-        <div className="mb-4 ml-4 mr-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Email</label>
+          <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Email</label>
           <input
             name="email"
             value={email}
-            className="shadow appearance-none border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="cormorant-infant-light shadow border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="email"
             placeholder="email@example.com"
             onChange={handleChange}
@@ -160,12 +162,12 @@ function Contact() {
         </div>
 
         <div className="mb-4 ml-4 mr-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
+          <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
           <PhoneInput
             name="phone"
             value={phone}
             placeholder="Enter phone number"
-            className='shadow appearance-none border rounded w-100 py-3 px-3 text-secondary focus:outline-none focus:shadow-outline'
+            className='cormorant-infant-light shadow border rounded w-100 py-3 px-3 text-secondary focus:outline-none focus:shadow-outline'
             onChange={handlePhoneChange}
             defaultCountry="US" />
           {phoneRequired && <p className="text-danger mt-2">Phone Number is required.</p>}
@@ -180,13 +182,13 @@ function Contact() {
         </div>
 
         <div className="mb-4 ml-4 mr-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">I am interested in:</label>
+          <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">I am interested in:</label>
           <div className="relative">
             <select
               name="inquiry"
               value={inquiry}
               onChange={handleChange}
-              className="d-block appearance-none w-100 bg-white border border-secondary hover:border-primary px-4 py-2 pr-8 rounded shadow focus:outline-none focus:shadow-outline"
+              className="cormorant-infant-light d-block appearance-none w-100 bg-white border border-secondary hover:border-primary px-4 py-2 pr-8 rounded shadow focus:outline-none focus:shadow-outline"
             >
               <option value="" disabled>I am looking for:</option>
               <option value='Feedback or Suggestions'>Feedback or Suggestions</option>
@@ -199,10 +201,10 @@ function Contact() {
         </div>
 
         <div className="mb-6 ml-4 mr-4">
-          <label className="d-block text-secondary text-sm font-weight-bold mb-2">Message</label>
+          <label className="cormorant-infant-bold-italic d-block text-secondary text-sm font-weight-bold mb-2">Message</label>
           <textarea
             name="message"
-            className="shadow appearance-none border rounded w-100 py-2 px-3 text-dark focus:outline-none focus:shadow-outline"
+            className="cormorant-infant-light shadow appearance-none border rounded w-100 py-2 px-3 text-dark focus:outline-none focus:shadow-outline"
             placeholder="Message for Silvia Reyes"
             value={message}
             onChange={handleChange}
@@ -210,7 +212,7 @@ function Contact() {
           {messageRequired && <p className="text-danger mt-2">Message is required.</p>}
         </div>
 
-        <div className="d-flex align-items-center justify-content-center gap-2">
+        <div className="d-flex align-items-center justify-content-center gap-2 mt-2">
           <button type="submit" disabled={state.submitting} className="bg-primary hover:bg-secondary text-white font-weight-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
             Send
           </button>

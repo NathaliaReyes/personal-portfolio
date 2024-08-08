@@ -9,7 +9,7 @@ function Recommendation() {
       image: 'becky',
       role: 'Full-Stack Web Developer',
       company: 'University of Denver BootCamp',
-      text: "Sylvia is someone I always want on my team. The first reason is that she is so incredibly intelligent. She is always several steps ahead of the curve due to her dedication to her work and her diligence when it comes to prioritizing her time. A second major reason is that the work she produces is so incredibly beautiful - from the user side of things to the organization in her code."
+      text: "Silvia is someone I always want on my team. The first reason is that she is so incredibly intelligent. She is always several steps ahead of the curve due to her dedication to her work and her diligence when it comes to prioritizing her time. A second major reason is that the work she produces is so incredibly beautiful - from the user side of things to the organization in her code."
     },
     {
       name: 'Jordan Heersink, MBA',
@@ -47,10 +47,10 @@ function Recommendation() {
       <section className='bg-light mt-2 mb-3'>
         <div className='container'>
           <div className='row border border-info rounded'>
-            <div className='col-lg-3 col-12 img-container'>
+            {/* <div className='col-lg-3 col-12 img-container'>
               <img className='recommendation-image rounded-circle' src={image} alt={`image-${props.image}`} />
-            </div>
-            <div className='col-lg-9 col-12'> 
+            </div> */}
+            <div className='col-12'> 
               <div className='mt-3'>
                 <p className='h6 text-center'>
                   <strong>{props.name}</strong> in {props.country}

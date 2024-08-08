@@ -10,6 +10,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
+import MyBlog from './pages/MyBlog';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([
@@ -22,10 +23,10 @@ const router = createBrowserRouter([
         index: true,
         element: <About />,
       },
-      // {
-      //   path: '/About',
-      //   element: <About />,
-      // },
+      {
+        path: '/MyBlog',
+        element: <MyBlog />,
+      },
       {
         path: '/Contact',
         element: <Contact />,

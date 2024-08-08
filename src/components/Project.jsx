@@ -153,10 +153,13 @@ function Project() {
     return (
       <div className="col-md-6 mb-3">
         <div className="card border border-secondary">
-          <img className="card-img-top img-fluid img-project" src={image} alt="Project Picture" />
+          <div className="img-container">
+            <img className="card-img-top img-fluid img-project" src={image} alt="Project Picture" />
+            <span className="img-tooltip">{props.title}</span>
+          </div>
           <div className="card-body border-top">
-            <h5 className="card-title cormorant-garamond-bold">{props.title}</h5>
-            <p className="card-text cormorant-garamond-medium paragraph">{props.description}</p>
+            <h5 className="card-title cormorant-infant-bold">{props.title}</h5>
+            <p className="card-text cormorant-infant-medium paragraph">{props.description}</p>
             <div className="row">
               <div className="col-sm-12 col-md-6 text-center text-pink">
                 <ul data-aos="fade-right" className="feature_list">
@@ -173,9 +176,9 @@ function Project() {
                 </ul>
               </div>
             </div>
-            {props.videoWalkthrought && <a href={props.videoWalkthrought} target="_blank" className="d-inline-block mr-4-important"><i className="fas fa-video text-muted"></i></a>}
-            {props.gitHub && <a href={props.gitHub} target="_blank" className="d-inline-block mr-4-important"><i className="fab fa-github text-muted"></i></a>}
-            {props.deployed && <a href={props.deployed} target="_blank" className="d-inline-block mr-4-important"><i className="fas fa-external-link-alt text-muted"></i></a>}
+            {props.videoWalkthrought && <a href={props.videoWalkthrought} target="_blank" className="d-inline-block mr-4-important"><i className="fas fa-video text-info"></i></a>}
+            {props.gitHub && <a href={props.gitHub} target="_blank" className="d-inline-block mr-4-important"><i className="fab fa-github text-danger"></i></a>}
+            {props.deployed && <a href={props.deployed} target="_blank" className="d-inline-block mr-4-important"><i className="fas fa-external-link-alt text-primary"></i></a>}
             </div>
         </div>
       </div>

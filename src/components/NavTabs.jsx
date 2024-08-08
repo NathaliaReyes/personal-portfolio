@@ -27,13 +27,13 @@ function NavTabs() {
     <>
       <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
         <img className='logo' src={image} />
-        <a className="navbar-brand tangerine-bold" href="#">Silvia Reyes</a>
+        <a className="navbar-brand tangerine-bold" href="/MyBlog">Silvia Reyes</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav">
-            <li className="nav-item">
+            <li className="tangerine-regular nav-item">
               <Link
                 to="/"
                 // This is a conditional (ternary) operator that checks to see if the current page is "Home"
@@ -43,7 +43,7 @@ function NavTabs() {
                 About Me
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="tangerine-regular nav-item">
               <Link
                 to="/Portfolio"
                 // Check to see if the currentPage is `Portfolio`, and if so we use the active link className from bootstrap. Otherwise, we set it to a normal nav-link
@@ -52,22 +52,31 @@ function NavTabs() {
                 Portfolio
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="tangerine-regular nav-item">
               <Link
-                to="/Contact"
-                // Check to see if the currentPage is `Contact`, and if so we use the active link className from bootstrap. Otherwise, we set it to a normal nav-link
-                className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+                to="/MyBlog"
+                // Check to see if the currentPage is `MyBlog`, and if so we use the active link className from bootstrap. Otherwise, we set it to a normal nav-link
+                className={currentPage === '/MyBlog' ? 'nav-link active' : 'nav-link'}
               >
-                Contact
+                My Blog
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="tangerine-regular nav-item">
               <Link
                 to="/Resume"
                 // Check to see if the currentPage is `Contact`, and if so we use the active link className from bootstrap. Otherwise, we set it to a normal nav-link
                 className={currentPage === '/Resume' ? 'nav-link active' : 'nav-link'}
               >
                 Resumé
+              </Link>
+            </li>
+            <li className="tangerine-regular nav-item">
+              <Link
+                to="/Contact"
+                // Check to see if the currentPage is `Contact`, and if so we use the active link className from bootstrap. Otherwise, we set it to a normal nav-link
+                className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+              >
+                Contact
               </Link>
             </li>
           </ul>

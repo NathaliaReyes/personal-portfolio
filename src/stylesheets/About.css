@@ -28,7 +28,7 @@
   box-shadow: 0 3px 19px 1px rgb(0 0 0 / 25%);
 }
 
-.cormorant-garamond-light {
+/* .cormorant-garamond-light {
   font-family: "Cormorant Garamond", serif;
   font-weight: 300;
   font-style: normal;
@@ -86,8 +86,69 @@
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   font-style: italic;
-}
+} */
 
 .paragraph {
   text-align: justify;
 }
+
+.cormorant-infant-light {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-infant-regular {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cormorant-infant-medium {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.cormorant-infant-semibold {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cormorant-infant-bold {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cormorant-infant-light-italic {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.cormorant-infant-regular-italic {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.cormorant-infant-medium-italic {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.cormorant-infant-semibold-italic {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.cormorant-infant-bold-italic {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
