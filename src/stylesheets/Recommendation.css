@@ -1,27 +1,6 @@
-.recommendation-image {
-  margin-left: 15px;
-  /* width: 200px; */
-  height: 200px;
-  width: auto;
-  border-radius: 5px;
-  
-}
 
 nav {
   box-shadow: 0 4px 8px 0 rgba(124, 183, 241, 0.2), 0 6px 20px 0 rgba(11, 157, 247, 0.19);
-}
-
-.container-form {
-  background:  #a7ddf1;
-  width: 90%;
-  margin: auto;
-}
-
-.img-container {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .parrafo {

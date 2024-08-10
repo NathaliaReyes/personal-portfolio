@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="mx-3 main-content" style={{ fontFamily: 'Cormorant Garamond, serif', fontWeight: '600 !important', fontStyle: 'normal' }}>
+      <main className="mx-1 main-content" >
         <Outlet />
       </main>
       <Footer />

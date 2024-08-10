@@ -20,8 +20,8 @@ export default function About() {
     <div className="container pt-3">
       <div>
         <h1 className="cormorant-infant-bold">About Me</h1>
-        <img className="img-silvia" src={image} alt="Image Silvia" />
-        <p className="cormorant-infant-medium mt-4 text-justify paragraph">
+        <img className="img-silvia" src={image} alt="Profile_Image_Silvia" />
+        <p className="cormorant-infant-medium mt-3 text-justify paragraph">
           Hi! I am Silvia Reyes, a Colombian-born developer living in the USA.
           After studying chemical engineering for three years,
           I became interested in computer science and began coding in 2022. I am particularly

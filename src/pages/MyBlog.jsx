@@ -6,7 +6,7 @@ function MyBlog() {
     {
       title: 'How to set up Multer for file uploads in Node.js',
       date: '8/8/2024',
-      image: 'multer',
+      // image: 'multer',
       subtitle: 'Multer is a middleware for handling multipart/form-data, which is primarily used for uploading files. Here is a step-by-step guide on how to set up Multer for file uploads in Node.js.',
       description: `
         1. Install Multer on the server side by typing npm install multer in the terminal.<br>
@@ -32,17 +32,17 @@ function MyBlog() {
 
   function ArticlesMyBlog(props) {
 
-    const [image, setImage] = useState('');
+    // const [image, setImage] = useState('');
 
-    useEffect(() => {
-      import(`../images/${props.image}.jpg`)
-        .then((image) => {
-          setImage(image.default);
-        })
-        .catch((error) => {
-          console.error(`Error loading image: ${error}`);
-        });
-    }, [props.image]);
+    // useEffect(() => {
+    //   import(`../images/${props.image}.jpg`)
+    //     .then((image) => {
+    //       setImage(image.default);
+    //     })
+    //     .catch((error) => {
+    //       console.error(`Error loading image: ${error}`);
+    //     });
+    // }, [props.image]);
 
     return (
       <section className='bg-light mt-2 mb-3 container p-2'>
@@ -68,7 +68,7 @@ function MyBlog() {
             key={index}
             title={article.title}
             date={article.date}
-            image={article.image}
+            // image={article.image}
             subtitle={article.subtitle}
             description={article.description}
             writer={article.writer}
