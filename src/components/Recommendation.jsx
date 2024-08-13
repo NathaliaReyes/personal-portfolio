@@ -7,14 +7,14 @@ function Recommendation() {
       name: 'Rebecca Feltman',
       country: 'United States',
       role: 'Full-Stack Web Developer',
-      company: 'University of Denver BootCamp',
+      company: 'University of Denver',
       text: "Silvia is someone I always want on my team. The first reason is that she is so incredibly intelligent. She is always several steps ahead of the curve due to her dedication to her work and her diligence when it comes to prioritizing her time. A second major reason is that the work she produces is so incredibly beautiful - from the user side of things to the organization in her code."
     },
     {
-      name: 'Jordan Heersink, MBA',
+      name: 'Jordan Heersink',
       country: 'United States',
       role: 'Full-Stack Web Developer',
-      company: 'University of Denver BootCamp',
+      company: 'University of Denver',
       text: "Silvia’s attention to detail and willingness to dive head-first into new concepts is something that impressed me in my time working with her. When presented with a task that was new and nobody else really wanted, Silvia did not hesitate to take it. Silvia is willing to take the time to not only learn new skills (and learn them quickly) but also takes the time to perfect them too."
     },
     {
@@ -32,12 +32,12 @@ function Recommendation() {
       <section className='bg-light mb-3'>
         <div className='container'>
           <div className='row border border-info rounded'>
-            <div className='col-12'> 
+            <div> 
               <div className='mt-2'>
-                <p className='h6 text-center'>
+                <p className='text-center'>
                   <strong>{props.name}</strong> in {props.country}
                 </p>
-                <p className='text-secondary text-center'>
+                <p className='text-secondary text-center fs-6 fw-light'>
                   {props.role} at <strong>{props.company}</strong>
                 </p>
                 <p className='text-start parrafo paragraph'>
@@ -54,8 +54,8 @@ function Recommendation() {
 
   return (
     <div>
-      <div className='container mt-3'>
-        <h3 className='cormorant-garamond-bold'>Recommendations:</h3>
+      <div className='container mt-2'>
+        <h3 className='cormorant-infant-bold'>Recommendations:</h3>
         {recommendations.map((recommendation, index) => (
           <LinkedInRecommendation
             key={index}
