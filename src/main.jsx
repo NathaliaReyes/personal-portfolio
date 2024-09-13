@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
-// Bringing in the required imports from 'react-router-dom' to set up application routing behavior
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Portfolio from './pages/Portfolio';
-import Resume from './pages/Resume';
-import MyBlog from './pages/MyBlog';
+import About from '@pages/About';
+import Contact from '@pages/Contact';
+import Portfolio from '@pages/Portfolio';
+import Resume from '@pages/Resume';
+import MyBlog from '@pages/MyBlog';
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([

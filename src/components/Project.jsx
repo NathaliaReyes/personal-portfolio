@@ -7,6 +7,22 @@ import 'aos/dist/aos.css';
 function Project() {
   const projects = [
     {
+      title: 'Alpine Auto Sales LLC',
+      technologies: [
+        'React.js',
+        'Node.js',
+        'Express.js',
+        'AWS S3-Ec2-CloudFront',
+        'Tailwind CSS',
+        'Aceternity'
+      ],
+      description: 'A front-end application for a spa, providing information about services, products, and contact details. It includes a contact form for inquiries.',
+      image: 'auto',
+      gitHub: 'https://github.com/NathaliaReyes/alpine_auto_cars.git',
+      videoWalkthrought:'https://drive.google.com/file/d/1CxSo_DGtIHO5r96fMN7_BGL0ZJArjvNF/view?usp=sharing',
+      deployed: 'https://usa.alpineauto.xyz/'
+    },
+    {
       title: 'Harmony Wellness & Spa',
       technologies: [
         'React.js',
@@ -31,7 +47,7 @@ function Project() {
         'Dotenv',
         'Tailwind CSS'
       ],
-      description: 'A React-based website using shadcn/ui components to connect with an expert flight instructor and learn about his services.',
+      description: 'A React-based website using shadcn/ui components to connect with an expert flight instructor and learn about his services, including information lessons and accessing flight resources.',
       image: 'community',
       gitHub: 'https://github.com/NathaliaReyes/community-aerosports.git',
       deployed: 'https://communityaerosports.netlify.app/'
@@ -77,7 +93,7 @@ function Project() {
         'Bored API',
         'Open Trivia DB'
       ],
-      description: 'This webpage is meant to encourage users to stop the mindless scrolling on TikTok, Reddit, Instagram, or whatever media they’re too plugged into. When users scan the QR code, they’re presented with a trivia game that is meant to engage their mind, and then they’re given a suggestion of something to do that’s not on their phone.',
+      description: 'This webpage encourages users to stop mindless scrolling on social media. Scanning the QR code presents a trivia game to engage their mind and suggests offline activities.',
       image: 'trivia-quiz',
       gitHub: 'https://github.com/NathaliaReyes/break-the-scroll.git',
       videoWalkthrought: '',
@@ -109,25 +125,25 @@ function Project() {
         'Maven',
         'Postman'
       ],
-      description: 'This is a REST API developed in Java using Spring Boot, designed to streamline standard processes in commercial transactions for products, including sales recording and stock management.',
+      description: 'This is a REST API developed in Java using Spring Boot, designed to streamline standard processes in commercial transactions for products, including sales recording and stock management, generating detailed reports, and ensuring data integrity.',
       image: 'sales-management',
       gitHub: 'https://github.com/NathaliaReyes/SalesManagement.git',
       videoWalkthrought: '',
       deployed: ''
     },
-    {
-      title: 'Spa Database',
-      technologies: [
-        'MySQL', 
-        'Workbench', 
-        'POWER BI',
-      ],
-      description: 'This project creates a relational database for a spa, managing client transactions like service bookings and product purchases. It simplifies operations and enhances the customer and employee experience.',
-      image: 'spa-db',
-      gitHub: 'https://github.com/NathaliaReyes/spa-mysql-db.git',
-      videoWalkthrought: '',
-      deployed: ''
-    }
+    // {
+    //   title: 'Spa Database',
+    //   technologies: [
+    //     'MySQL', 
+    //     'Workbench', 
+    //     'POWER BI',
+    //   ],
+    //   description: 'This project creates a relational database for a spa, managing client transactions like service bookings and product purchases. It simplifies operations and enhances the customer and employee experience.',
+    //   image: 'spa-db',
+    //   gitHub: 'https://github.com/NathaliaReyes/spa-mysql-db.git',
+    //   videoWalkthrought: '',
+    //   deployed: ''
+    // }
   ]
 
   useEffect(() => {
