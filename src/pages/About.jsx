@@ -8,6 +8,7 @@ import React, { useEffect } from "react";
 import hikingImg from '../images/hiking.jpg'
 import trilingualImg from '../images/trilingual.png'
 import salsaImg from '../images/salsa-lover.png'
+import Words from '@components/Words';
 
 export default function About() {
   useEffect(() => {
@@ -17,11 +18,12 @@ export default function About() {
   }, []);
 
   return (
-    <div className="container pt-3">
-      <div>
-        <h1 className="cormorant-infant-bold text-center " data-aos="zoom-in">Hello World, I am Silvia Reyes</h1>
+    <div className="container pt-1">
+      <div className="text-neutral-600">
+        <h1 className="cormorant-infant-bold text-xl md:text-2xl text-center" data-aos="zoom-in">Hello World, I am Silvia Reyes</h1>
         <img className="img-silvia mt-4" src={image} alt="Profile_Image_Silvia" />
-        <p className="cormorant-infant-medium mt-3 text-justify paragraph">
+        <Words />
+        <p className="cormorant-infant-medium text-justify paragraph">
           Hi! I am Silvia Reyes, a Colombian-born developer living in the USA.
           After studying chemical engineering for three years,
           I became interested in computer science and began coding in 2022. I am particularly
@@ -34,23 +36,23 @@ export default function About() {
 
       </div>
 
-      <div className="container mt-4">
-        <h3 className="cormorant-infant-bold">Fun Facts</h3>
-        <div className="row">
-          <div className="col-sm-12 col-md-4 text-center" data-aos="flip-left">
-            <img className="img-fun-fact" src={trilingualImg} alt="Trilingual" />
+      <div className="mt-2">
+        <h3 className="cormorant-infant-bold text-lg md:text-xl">Fun Facts</h3>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="w-full md:w-1/3 text-center" data-aos="flip-left">
+            <img className="mx-auto img-fun-fact" src={trilingualImg} alt="Trilingual" />
             <p className="lead mt-4 text-primary cormorant-infant-semibold-italic" style={{ fontStyle: 'italic' }} >
               Trilingual
             </p>
           </div>
-          <div className="col-sm-12 col-md-4 text-center" data-aos="flip-right">
-            <img className="img-fun-fact" src={hikingImg} alt="Hiking" />
+          <div className="w-full md:w-1/3 text-center" data-aos="flip-right">
+            <img className="mx-auto img-fun-fact" src={hikingImg} alt="Hiking" />
             <p className="lead mt-4 text-primary cormorant-infant-semibold-italic" style={{ fontStyle: 'italic' }} >
               Nature Lover
             </p>
           </div>
-          <div className="col-sm-12 col-md-4 text-center" data-aos="flip-up">
-            <img className="img-fun-fact" src={salsaImg} alt="Salsa" />
+          <div className="w-full md:w-1/3 text-center" data-aos="flip-up">
+            <img className="mx-auto img-fun-fact" src={salsaImg} alt="Salsa" />
             <p className="lead mt-4 text-primary cormorant-infant-semibold-italic" style={{ fontStyle: 'italic' }} >
               Salsa Lover
             </p>
@@ -58,7 +60,7 @@ export default function About() {
         </div>
       </div>
 
-      <div>
+      <div className="mt-2">
         <Recommendation />
       </div>
 

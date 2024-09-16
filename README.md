@@ -6,7 +6,7 @@ Upon opening the application, you're greeted with the About Me section, providin
 
 This portfolio serves as a testament to my skills and capabilities, providing potential employers with a comprehensive platform to assess my fit for their open positions.
 
-The portfolio is built using React.js for building the user interface, along with additional libraries such as AOS, Bootstrap, and SweetAlert2 to enhance the front-end interactions. React Router is used for seamless navigation within the single-page application. 
+The portfolio is built using React.js for building the user interface, along with additional libraries such as AOS, Tailwind, and SweetAlert2 to enhance the front-end interactions. React Router is used for seamless navigation within the single-page application. 
 
 The application also includes the ability to view PDFs using the React-PDF library. The project is set up with Vite, which provides a faster and leaner development experience. 
 
@@ -58,7 +58,7 @@ Some concepts and techniques used in this project were learned from the [Univers
 - **React Router**: Declarative routing for React.
 - **React-PDF**: Display PDFs in my React application (RESUMÉ).
 - **AOS**: Animate on scroll library.
-- **Bootstrap**: The world's most popular front-end open source toolkit.
+- **Tailwind**: The world's most popular front-end open source toolkit.
 - **SweetAlert2**: A beautiful, responsive, customizable, accessible replacement for JavaScript's popup boxes.
 - **Vite**: A build tool that aims to provide a faster and leaner development experience for modern web projects.
 - **ESLint**: A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.

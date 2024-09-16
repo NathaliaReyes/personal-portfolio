@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="mx-1 main-content" >
+      <main className="md:mx-8" >
         <Outlet />
       </main>
       <Footer />

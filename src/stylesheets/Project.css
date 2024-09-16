@@ -14,9 +14,6 @@ header {
   list-style-type: none;
 }
 
-.text-pink {
-  color: #FE2860;
-}
 
 .mr-4-important {
   margin-right: 0.5rem !important;
@@ -46,3 +43,9 @@ header {
 .img-container:hover .img-tooltip {
   opacity: 1;
 }
+
+.inter-var {
+  perspective: 1000px; /* Adjust this value to control the depth */
+  perspective-origin: center; /* Keep the perspective centered */
+}
+

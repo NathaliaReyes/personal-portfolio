@@ -22,40 +22,31 @@ function Recommendation() {
       country: 'Argentina',
       role: 'Senior IT Recruiter',
       company: 'LATAM',
-      text: "Silvia es una profesional comprometida con todos los desafíos que encara. Sabes que cuentas con ella y tienes la certeza de que cumple con los objetivos del proyecto en tiempo y forma. Perseverante, analítica, con orientación a resultados, siempre se brinda al máximo. Es un recurso valioso que sumará muchísimo a cualquier equipo, tanto a nivel laboral como humano."
+      text: "Silvia is a dedicated professional who takes on every challenge she faces. You know you can rely on her, and you're certain she will meet the project’s objectives on time and as expected. Persistent, analytical, and results-oriented, she always gives her best. She is a valuable asset who will greatly contribute to any team, both on a professional and personal level."
     }
   ]
 
   function LinkedInRecommendation(props) {
 
     return (
-      <section className='bg-light mb-3'>
-        <div className='container'>
-          <div className='row border border-info rounded'>
-            <div> 
-              <div className='mt-2'>
-                <p className='text-center'>
-                  <strong>{props.name}</strong> in {props.country}
-                </p>
-                <p className='text-secondary text-center fs-6 fw-light'>
-                  {props.role} at <strong>{props.company}</strong>
-                </p>
-                <p className='text-start parrafo paragraph'>
-                  "{props.text}"
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className='p-2 bg-zinc-900 mb-3 border-2 border-sky-600'>
+        <p className='text-center text-sky-50 cormorant-infant-bold'>
+          <strong>{props.name}</strong> in {props.country}
+        </p>
+        <p className='text-zinc-400 text-center text-sm'>
+          {props.role} at <strong>{props.company}</strong>
+        </p>
+        <p className='cormorant-infant-light text-sm sm:text-base text-sky-50 paragraph'>
+          "{props.text}"
+        </p>
+      </div>
     )
   }
 
   return (
     <div>
-      <div className='container mt-2'>
-        <h3 className='cormorant-infant-bold'>Recommendations:</h3>
+      <div className='mt-2'>
+        <h3 className='cormorant-infant-bold text-lg md:text-xl'>Recommendations:</h3>
         {recommendations.map((recommendation, index) => (
           <LinkedInRecommendation
             key={index}

@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
+// import '@aceternity-ui/flip-words/styles.css';
+import './index.css';
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import About from '@pages/About';

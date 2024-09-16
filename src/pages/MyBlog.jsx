@@ -45,12 +45,12 @@ function MyBlog() {
     // }, [props.image]);
 
     return (
-      <section className='bg-light mt-2 mb-3 container p-2'>
-        <h6 className='h6 text-bold text-danger text-bold'>{props.title}</h6>
-        <p className='text-secondary'>
+      <section className='bg-sky-50 mt-2 mb-3 container p-2'>
+        <h6 className='font-bold text-sky-700 text-bold'>{props.title}</h6>
+        <p className='text-zinc-500 text-xs'>
           {props.date}
         </p>
-        <p className='fs-6 text-secondary'>{props.subtitle}</p>
+        <p className='fs-6 text-zinc-400'>{props.subtitle}</p>
         <div dangerouslySetInnerHTML={{ __html: props.description }}></div>
         <p className='mt-3'><em>Written by: {props.writer}</em></p>
         {/* <footer className='mt-3 fs-6 text-muted'>{props.footer}</footer> */}
@@ -61,8 +61,8 @@ function MyBlog() {
   return (
     <div>
       <div className='container mt-4'>
-        <h3 className='cormorant-infant-bold fs-4 text-center'>Welcome to My Blog! Dive Into My Developer Journey</h3>
-        <h4 className='cormorant-infant-regular fs-6 pb-2 text-muted'>Here, I share my experiences, lessons learned, and useful tips for anyone starting in programming. Whether you're just beginning or looking for some inspiration, I hope my writings offer valuable insights and guidance on your path to becoming a great developer.</h4>
+        <h3 className='cormorant-infant-bold text-zinc-700 text-center'>Welcome to My Blog! Dive Into My Developer Journey</h3>
+        <h4 className='cormorant-infant-regular fs-6 pb-2 text-zinc-700'>Here, I share my experiences, lessons learned, and useful tips for anyone starting in programming. Whether you're just beginning or looking for some inspiration, I hope my writings offer valuable insights and guidance on your path to becoming a great developer.</h4>
         {articles.map((article, index) => (
           <ArticlesMyBlog
             key={index}

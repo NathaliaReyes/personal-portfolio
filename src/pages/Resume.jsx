@@ -9,8 +9,6 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 export default function Resume() {
   const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-  const [document, setDocument] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [scale, setScale] = useState(1.5);
 
@@ -19,7 +17,6 @@ export default function Resume() {
     loadingTask.promise.then(
       pdf => {
         console.log('PDF: ', pdf);
-        setDocument(pdf);
         setNumPages(pdf.numPages);
         setIsLoading(false);
       },
@@ -27,9 +24,11 @@ export default function Resume() {
         console.error("Error while loading PDF:", error);
       });
 
-    const handleResize = () => {
-      setScale(window.innerWidth < 600 ? 0.5 : 1.5);
-    };
+      const handleResize = () => {
+        const pdfContainerWidth = window.innerWidth * 0.99; // Ajusta el ancho al 90% del viewport
+        const newScale = pdfContainerWidth / 1000; // Asume que el PDF tiene un ancho base de 1000px
+        setScale(newScale < 0.6 ? 0.6 : newScale); // Mínimo de 0.6 en pantallas pequeñas
+      };
 
     window.addEventListener('resize', handleResize);
     handleResize();
@@ -43,9 +42,9 @@ export default function Resume() {
   }
 
   return (
-    <div className='pt-4'>
-      <a className='text-blue text-right cormorant-infant-medium' href={cvPdf} download="Silvia_Reyes_Resume.pdf">Download Resume</a>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div className='pt-2'>
+      <a className='ml-2 text-sky-800 underline font-semibold text-sm md:text-base' href={cvPdf} download="Silvia_Reyes_Resume.pdf">Download Resume</a>
+      <div style={{ display: 'flex', justifyContent: 'center', overflowY: 'auto', maxHeight: '100vh' }}>
         <Document file={cvPdf}>
           {Array.from(new Array(numPages), (el, index) => (
             <Page key={`page_${index + 1}`} pageNumber={index + 1} scale={scale} />

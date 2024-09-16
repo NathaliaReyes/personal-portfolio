@@ -24,6 +24,6 @@ p {
 }
 
 .icon-with-shadow:hover {
-  color: #0067d4; /* Cambia el color del icono en hover */
+  color: #adcbf0; /* Cambia el color del icono en hover */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aplica sombra circular */
 }
