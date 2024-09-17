@@ -24,8 +24,8 @@ function NavTabs() {
   return (
     <nav className="bg-sky-900 md:px-1 py-2 shadow-md">
       <div className="flex flex-row items-center justify-between">
-        <img className="w-14 md:w-16 h-auto" src={image} alt="Logo_Silvia_Reyes_Website" />
-        <a className="text-sm sm:text-lg md:text-xl sm:ml-1 md:ml-2 font-bold text-sky-50" href="/">Full Stack Web Developer</a>
+        <img className="w-14 md:w-16 h-auto ml-2" src={image} alt="Logo_Silvia_Reyes_Website" />
+        <a className="text-base sm:text-lg md:text-xl sm:ml-1 md:ml-2 font-bold text-sky-50" href="/">Full Stack Web Developer</a>
         {/* <Words /> */}
         {/* Botón para pantallas pequeñas */}
         <div className="md:hidden mr-2">
@@ -84,7 +84,7 @@ function NavTabs() {
       </div>
 
       {/* Menú de navegación para pantallas pequeñas cuando el botón está abierto */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} w-full text-right py-2`}>
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} w-full text-right py-2 px-2`}>
         <ul className="flex flex-col space-y-2 text-sky-50 pr-4">
           <li>
             <Link

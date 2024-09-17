@@ -78,20 +78,20 @@ function Contact() {
   return (
     <>
       {submitted && (
-        <div className="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 d-flex justify-content-center align-items-center" style={{ zIndex: 50 }}>
-          <div className="bg-white rounded shadow-lg p-2 text-center position-relative">
+        <div className="absolute top-0 left-0 w-full h-full bg-zinc-600 bg-opacity-50 flex justify-center items-center" style={{ zIndex: 50 }}>
+          <div className="bg-sky-50 rounded shadow-lg p-2 text-center relative">
             <button
               onClick={() => {
                 setSubmitted(false);
                 window.location.href = '/';
               }}
-              className="position-absolute top-0 end-0 m-2 text-secondary hover-text-dark"
+              className="absolute top-0 right-0 m-2 text-zinc-600 hover:text-zinc-800 focus:outline-none"
             >
               &times;
             </button>
-            <h2 className="fs-3 fw-bold mb-4">Your message has been delivered!</h2>
-            <p className="text-dark mb-4">Thank you for reaching out - I will get in touch soon!</p>
-            <p className="text-secondary">✨ Have a splendid day! ✨</p>
+            <h2 className="text-base font-semibold mb-4">Your message has been delivered!</h2>
+            <p className="text-zinc-700 mb-4">Thank you for reaching out - I will get in touch soon!</p>
+            <p className="text-zinc-800">✨ Have a splendid day! ✨</p>
           </div>
         </div>
       )}
@@ -117,71 +117,64 @@ function Contact() {
             </a>
           </p>
 
-          {!fieldsCompleted && <p className="text-red-500 text-xs mt-2">Please fill out all required fields.</p>}
+          {!fieldsCompleted && <p className="text-red-500 text-xs mt-2 cormorant-infant-bold">Please fill out all required fields.</p>}
         </div>
-        <div className='row'>
-          <div className="col-12 col-sm-6 mb-4 mr-4">
+        <div className='flex flex-row space-x-2 mt-2'>
+          <div className="w-full sm:w-1/2 mb-4">
             <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Name</label>
             <input
               name="firstName"
               value={firstName}
-              className="cormorant-infant-light shadow border rounded w-100 py-2 px-3 text-secondary focus:outline-none focus:shadow-outline"
+              className="cormorant-infant-light shadow border rounded w-full py-2 px-3 text-zinc-900 focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="First Name"
               onChange={handleChange}
             />
-            {nameRequired && <p className="text-danger mt-2">Name is required.</p>}
+            {nameRequired && <p className="text-red-900 mt-2 cormorant-infant-bold">Name is required.</p>}
           </div>
 
-          <div className="col-12 col-sm-6 mb-4 ml-4 mr-4">
+          <div className="w-full sm:w-1/2 mb-4">
             <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Last Name</label>
             <input
               name="lastName"
               value={lastName}
-              className="cormorant-infant-light shadow border rounded w-100 py-2 px-3 text-secondary focus:outline-none focus:shadow-outline"
+              className="cormorant-infant-light shadow border rounded w-full py-2 px-3 text-zinc-900 focus:outline-none focus:shadow-outline"
               type="text"
               placeholder="Last Name"
               onChange={handleChange}
             />
-            {nameRequired && <p className="text-danger mt-2">Last Name is required.</p>}
+            {nameRequired && <p className="text-red-900 cormorant-infant-bold mt-2">Last Name is required.</p>}
           </div>
         </div>
 
-        <div className="mb-4 ml-4 mr-4">
+        <div className="mb-4 mr-4">
           <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Email</label>
           <input
             name="email"
             value={email}
-            className="cormorant-infant-light shadow border rounded w-100 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            className="cormorant-infant-light shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             type="email"
             placeholder="email@example.com"
             onChange={handleChange}
           />
-          {emailRequired && <p className="text-danger mt-2">Email is required.</p>}
-          {!emailValid && email && <p className="text-danger mt-2">Please enter a valid email address.</p>}
+          {emailRequired && <p className="text-red-900 mt-2 cormorant-infant-bold">Email is required.</p>}
+          {!emailValid && email && <p className="text-red-900 mt-2 cormorant-infant-bold">Please enter a valid email address.</p>}
         </div>
 
-        <div className="mb-4 ml-4 mr-4">
+        <div className="mb-4 mr-4">
           <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
           <PhoneInput
             name="phone"
             value={phone}
             placeholder="Enter phone number"
-            className='cormorant-infant-light shadow border rounded w-100 py-3 px-3 text-secondary focus:outline-none focus:shadow-outline'
+            className='cormorant-infant-light shadow border rounded w-full py-3 px-3 text-zinc-600 focus:outline-none focus:shadow-outline'
             onChange={handlePhoneChange}
             defaultCountry="US" />
-          {phoneRequired && <p className="text-danger mt-2">Phone Number is required.</p>}
-          {/* <input
-            name="phone"
-            value={phone}
-            className={`shadow appearance-none border ${!emailValid ? 'border-red-500' : ''} rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline`}
-            type="email"
-            placeholder="email@example.com"
-            onChange={handleChange}
-          /> */}
+          {phoneRequired && <p className="text-red-900 mt-2 cormorant-infant-bold">Phone Number is required.</p>}
+          
         </div>
 
-        <div className="mb-4 ml-4 mr-4">
+        <div className="mb-4 mr-4">
           <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">I am interested in:</label>
           <div className="relative">
             <select
@@ -200,23 +193,23 @@ function Contact() {
           </div>
         </div>
 
-        <div className="mb-6 ml-4 mr-4">
-          <label className="cormorant-infant-bold-italic d-block text-secondary text-sm font-weight-bold mb-2">Message</label>
+        <div className="mb-6 ">
+          <label className="cormorant-infant-bold-italic block text-zinc-700 text-sm font-weight-bold mb-2">Message</label>
           <textarea
             name="message"
-            className="cormorant-infant-light shadow appearance-none border rounded w-100 py-2 px-3 text-dark focus:outline-none focus:shadow-outline"
+            className="cormorant-infant-light shadow appearance-none border rounded w-full py-2 px-3 text-zinc-900 focus:outline-none focus:shadow-outline"
             placeholder="Message for Silvia Reyes"
             value={message}
             onChange={handleChange}
           ></textarea>
-          {messageRequired && <p className="text-danger mt-2">Message is required.</p>}
+          {messageRequired && <p className="text-red-900 mt-2 cormorant-infant-bold">Message is required.</p>}
         </div>
 
-        <div className="d-flex align-items-center justify-content-center gap-2 mt-2">
-          <button type="submit" disabled={state.submitting} className="bg-primary hover:bg-secondary text-white font-weight-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+        <div className="flex items-center justify-evenly gap-2 mt-2">
+          <button type="submit" disabled={state.submitting} className="bg-sky-800 hover:bg-zinc-500 text-white font-weight-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
             Send
           </button>
-          <button type="button" className="bg-primary hover:bg-secondary text-white font-weight-bold p-2 px-4 rounded focus:outline-none focus:shadow-outline" onClick={handleCancel}>
+          <button type="button" className="bg-sky-800 hover:bg-zinc-500 text-white font-weight-bold p-2 px-4 rounded focus:outline-none focus:shadow-outline" onClick={handleCancel}>
             Cancel
           </button>
         </div>

@@ -69,7 +69,7 @@ export default function ThreeDCardDemo() {
       ],
       description: 'An interactive MVC web application catering to coffee aficionados. Users share experiences, post about new coffee shops, and provide feedback, fostering a vibrant community.',
       image: 'coffee-outlet',
-      gitHub: 'https://github.com/NathaliaReyes/coffee-outlet.git',
+      gitHub: 'https://github.com/NathaliaReyes/coffee_outlet.git',
       videoWalkthrought: 'https://drive.google.com/file/d/1vU7d2GpcvbSMt_iA-AzY20sFmxL4tfmc/view?usp=sharing',
       deployed: 'https://coffee-outlet.onrender.com/'
     },
@@ -173,7 +173,7 @@ export default function ThreeDCardDemo() {
     return (
       <div className="">
         <CardContainer className="inter-var md:overflow-visible">
-          <CardBody className="md:overflow-visible bg-gray-100 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[30rem] md:w-[30rem] lg:w-[26rem] xl:w-[32rem] h-auto rounded-xl p-6 border">
+          <CardBody className="md:overflow-visible bg-gray-100 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[30rem] md:w-[30rem] lg:w-[26rem] xl:w-[32rem] h-auto rounded-xl p-2 md:p-6 border">
             <CardItem translateZ="30" className="text-lg lg:text-xl font-bold text-neutral-600 dark:text-white">
               {props.title}
             </CardItem>
@@ -187,27 +187,31 @@ export default function ThreeDCardDemo() {
                 alt={`${props.title} project`}
               />
             </CardItem>
-            <div className="flex justify-between items-center mt-6">
-              {props.gitHub && (
-                <a href={props.gitHub} target="_blank" rel="noopener noreferrer">
-                  <CardItem translateZ={20} className="py-2 rounded-xl text-xs font-semibold text-sky-900 dark:text-white">
-                    View on GitHub →
-                  </CardItem>
-                </a>
-              )}
-              {props.videoWalkthrought && (
-                <a href={props.videoWalkthrought} target="_blank" rel="noopener noreferrer">
-                  <CardItem translateZ={20} className="py-2 rounded-xl text-xs font-semibold text-sky-900 dark:text-white">
-                  Walkthrought Video →
-                  </CardItem>
-                </a>
-              )}
+            <div className="flex justify-around items-center mt-6">
+              <div className="flex flex-col w-3/4 md:flex-row space-y-2 md:space-y-0">
+                {props.gitHub && (
+                  <a href={props.gitHub} target="_blank" rel="noopener noreferrer">
+                    <CardItem translateZ={20} className="px-2 rounded-xl text-xs font-semibold text-sky-900 dark:text-white">
+                      View on GitHub →
+                    </CardItem>
+                  </a>
+                )}
+                {props.videoWalkthrought && (
+                  <a href={props.videoWalkthrought} target="_blank" rel="noopener noreferrer">
+                    <CardItem translateZ={20} className="px-2 rounded-xl text-xs font-semibold text-sky-900 dark:text-white">
+                      Video Demo →
+                    </CardItem>
+                  </a>
+                )}
+              </div>
               {props.deployed && (
-                <a href={props.deployed} target="_blank" rel="noopener noreferrer">
-                  <CardItem translateZ={20} className="px-2 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
-                    Live Site →
-                  </CardItem>
-                </a>
+                <div className="flex justify-end w-full md:w-auto">
+                  <a href={props.deployed} target="_blank" rel="noopener noreferrer">
+                    <CardItem translateZ={20} className="px-2 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
+                      Live Site →
+                    </CardItem>
+                  </a>
+                </div>
               )}
             </div>
           </CardBody>

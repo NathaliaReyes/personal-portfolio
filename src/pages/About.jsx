@@ -20,7 +20,7 @@ export default function About() {
   return (
     <div className="container pt-1">
       <div className="text-neutral-600">
-        <h1 className="cormorant-infant-bold text-xl md:text-2xl text-center" data-aos="zoom-in">Hello World, I am Silvia Reyes</h1>
+        <h1 className="cormorant-infant-bold text-xl md:text-2xl text-center mt-2" data-aos="zoom-in">Hello World, I am Silvia Reyes</h1>
         <img className="img-silvia mt-4" src={image} alt="Profile_Image_Silvia" />
         <Words />
         <p className="cormorant-infant-medium text-justify paragraph">
