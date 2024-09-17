@@ -8,7 +8,7 @@ export default function Portfolio() {
           <h1 className="cormorant-infant-bold mt-2">My Projects</h1>
           <p className="cormorant-infant-medium">
             Some of my projects are listed below. 
-            Click the icon project <span className="text-zinc-600 underline">(located at the bottom left)</span> to view the deployed application and a video walkthrough.
+            Click the link <span className="text-zinc-600 underline">(located at the bottom of each project)</span> to view the deployed application and a video walkthrough.
           </p>
         </div>
           <CardProject />

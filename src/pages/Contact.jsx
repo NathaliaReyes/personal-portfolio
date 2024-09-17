@@ -76,7 +76,7 @@ function Contact() {
   };
 
   return (
-    <>
+    <div className='mx-6 md:mx-20'>
       {submitted && (
         <div className="absolute top-0 left-0 w-full h-full bg-zinc-600 bg-opacity-50 flex justify-center items-center" style={{ zIndex: 50 }}>
           <div className="bg-sky-50 rounded shadow-lg p-2 text-center relative">
@@ -96,7 +96,7 @@ function Contact() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="container my-2 p-5 bg-white rounded-lg shadow-lg mt-2 mb-4">
+      <form onSubmit={handleSubmit} className="container my-2 p-5 bg-zinc-100 rounded-lg shadow-lg mt-2 mb-4 ">
         <div>
           <h2 className='cormorant-infant-bold text-xl text-center'>Get in touch</h2>
           <p className="cormorant-infant-semibold lg:text-xl md:text-lg sm:text-base mt-2 ml-10 mr-10 mb-4 text-center">
@@ -214,7 +214,7 @@ function Contact() {
           </button>
         </div>
       </form>
-    </>
+    </div>
   );
 }
 

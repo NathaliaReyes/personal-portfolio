@@ -59,7 +59,7 @@ function MyBlog() {
   }
 
   return (
-    <div>
+    <div className=''>
       <div className='container mt-4'>
         <h3 className='cormorant-infant-bold text-zinc-700 text-center'>Welcome to My Blog! Dive Into My Developer Journey</h3>
         <h4 className='cormorant-infant-regular fs-6 pb-2 text-zinc-700'>Here, I share my experiences, lessons learned, and useful tips for anyone starting in programming. Whether you're just beginning or looking for some inspiration, I hope my writings offer valuable insights and guidance on your path to becoming a great developer.</h4>
