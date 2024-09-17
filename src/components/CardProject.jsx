@@ -4,8 +4,8 @@
 
 import React, { useState, useEffect } from "react";
 import '../stylesheets/Project.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 // import Link from "next/link";
 
@@ -151,11 +151,11 @@ export default function ThreeDCardDemo() {
     // }
   ]
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-    });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000,
+  //   });
+  // }, []);
 
   function ProjectsToShow(props) {
     const [image, setImage] = useState('');
@@ -171,10 +171,10 @@ export default function ThreeDCardDemo() {
     }, [props.image]);
 
     return (
-      <div className="">
+      <div className="p-2">
         <CardContainer className="inter-var md:overflow-visible">
-          <CardBody className="md:overflow-visible bg-gray-100 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[30rem] md:w-[30rem] lg:w-[26rem] xl:w-[32rem] h-auto rounded-xl p-2 md:p-6 border">
-            <CardItem translateZ="30" className="text-lg lg:text-xl font-bold text-neutral-600 dark:text-white">
+          <CardBody className="md:overflow-visible bg-gray-100 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:w-[30rem] lg:w-[26rem] xl:w-[32rem] h-auto rounded-xl p-2 md:p-6 border">
+            <CardItem translateZ="40" className="text-lg lg:text-xl font-bold text-neutral-600 dark:text-white">
               {props.title}
             </CardItem>
             <CardItem as="p" translateZ="35" className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">

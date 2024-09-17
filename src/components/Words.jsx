@@ -7,7 +7,7 @@ export default function FlipWordsDemo() {
   
     return (
       <div className="mt-2 sm:mt-0 sm:h-[5rem] flex flex-row items-center justify-center">
-        <div className="flex flex-row justify-center text-lg md:text-2xl text-neutral-600 dark:text-neutral-400 flex-wrap">
+        <div className="flex flex-row justify-center text-base md:text-2xl text-neutral-600 dark:text-neutral-400 flex-wrap">
           {/* Personaliza el texto principal */}
           <h2 className="cormorant-infant-bold text-base md:text-lg">And I create</h2>
           {/* Aquí están las palabras que cambian dinámicamente */}

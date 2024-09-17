@@ -45,7 +45,7 @@ header {
 }
 
 .inter-var {
-  perspective: 1000px; /* Adjust this value to control the depth */
+  perspective: 2000px; /* Adjust this value to control the depth */
   perspective-origin: center; /* Keep the perspective centered */
 }
 
