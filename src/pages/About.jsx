@@ -21,8 +21,10 @@ export default function About() {
     <div className="container pt-1">
       <div className="text-neutral-600">
         <h1 className="cormorant-infant-bold text-xl md:text-2xl text-center mt-2" data-aos="zoom-in">Hello World, I am Silvia Reyes</h1>
-        <img className="img-silvia mt-4" src={image} alt="Profile_Image_Silvia" />
+        <img className="img-silvia mt-4 overflow-hidden" src={image} alt="Profile_Image_Silvia" />
+        <h2 className="cormorant-infant-bold text-base md:text-lg text-center mt-2">And I create</h2>
         <Words />
+        <h2 className="cormorant-infant-bold text-base md:text-lg text-center">websites that are built with the latest technologies</h2>
         <p className="cormorant-infant-medium text-justify paragraph">
           Hi! I am Silvia Reyes, a Colombian-born developer living in the USA.
           After studying chemical engineering for three years,
@@ -36,7 +38,7 @@ export default function About() {
 
       </div>
 
-      <div className="mt-2">
+      <div className="mt-4 ">
         <h3 className="cormorant-infant-bold text-lg md:text-xl">Fun Facts</h3>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <div className="w-full md:w-1/3 text-center" data-aos="flip-left">

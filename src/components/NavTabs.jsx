@@ -29,10 +29,10 @@ function NavTabs() {
         {/* <Words /> */}
         {/* Botón para pantallas pequeñas */}
         <div className="md:hidden mr-2">
-          <button onClick={() => setIsOpen(!isOpen)} className="flex flex-col justify-around items-center w-10 h-10 rounded-full bg-sky-50 p-2">
-            <div className="w-3 h-0.5 bg-sky-900"></div>
-            <div className="w-6 h-0.5 bg-sky-900"></div>
-            <div className="w-3 h-0.5 bg-sky-900"></div>
+          <button onClick={() => setIsOpen(!isOpen)} className="flex flex-col justify-around items-center w-10 h-10 p-2">
+            <div className="w-3 h-0.5 bg-sky-50"></div>
+            <div className="w-6 h-0.5 bg-sky-50"></div>
+            <div className="w-3 h-0.5 bg-sky-50"></div>
           </button>
         </div>
 
