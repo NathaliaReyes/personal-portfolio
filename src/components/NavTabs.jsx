@@ -37,7 +37,7 @@ function NavTabs() {
         </div>
 
         {/* Menú de navegación para pantallas grandes */}
-        <div className="hidden md:flex md:justify-end">
+        <div className="hidden md:flex md:justify-end mr-2">
           <ul className="flex md:space-x-2 lg:space-x-6 text-center md:text-right">
             <li className="text-letter">
               <Link
@@ -84,8 +84,8 @@ function NavTabs() {
       </div>
 
       {/* Menú de navegación para pantallas pequeñas cuando el botón está abierto */}
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} w-full text-right py-2 px-2`}>
-        <ul className="flex flex-col space-y-2 text-sky-50 pr-4">
+      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'} w-full text-center`}>
+        <ul className="flex flex-col space-y-2 text-sky-50">
           <li>
             <Link
               to="/"

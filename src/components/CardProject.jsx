@@ -21,7 +21,7 @@ export default function ThreeDCardDemo() {
         'Tailwind CSS',
         'Aceternity'
       ],
-      description: 'A front-end application for a spa, providing information about services, products, and contact details. It includes a contact form for inquiries.',
+      description: 'A full stack application for a dealership car, providing information and details about the cars available to purchase and a contact form for inquiries.',
       image: 'auto',
       gitHub: 'https://github.com/NathaliaReyes/alpine_auto_cars.git',
       videoWalkthrought: 'https://drive.google.com/file/d/1CxSo_DGtIHO5r96fMN7_BGL0ZJArjvNF/view?usp=sharing',
@@ -136,26 +136,8 @@ export default function ThreeDCardDemo() {
       videoWalkthrought: '',
       deployed: ''
     },
-    // {
-    //   title: 'Spa Database',
-    //   technologies: [
-    //     'MySQL', 
-    //     'Workbench', 
-    //     'POWER BI',
-    //   ],
-    //   description: 'This project creates a relational database for a spa, managing client transactions like service bookings and product purchases. It simplifies operations and enhances the customer and employee experience.',
-    //   image: 'spa-db',
-    //   gitHub: 'https://github.com/NathaliaReyes/spa-mysql-db.git',
-    //   videoWalkthrought: '',
-    //   deployed: ''
-    // }
   ]
 
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000,
-  //   });
-  // }, []);
 
   function ProjectsToShow(props) {
     const [image, setImage] = useState('');
@@ -171,23 +153,23 @@ export default function ThreeDCardDemo() {
     }, [props.image]);
 
     return (
-      <div className="p-2">
-        <CardContainer className="inter-var md:overflow-visible">
-          <CardBody className="md:overflow-visible bg-gray-100 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:w-[30rem] lg:w-[26rem] xl:w-[32rem] h-auto rounded-xl p-2 md:p-6 border">
-            <CardItem translateZ="40" className="text-lg lg:text-xl font-bold text-neutral-600 dark:text-white">
+      <div className="px-2">
+        <CardContainer className="inter-var">
+          <CardBody className=" bg-gray-100 w-full h-auto rounded-xl p-2 border">
+            <CardItem translateZ="40" className="text-lg lg:text-xl font-bold text-neutral-600">
               {props.title}
             </CardItem>
-            <CardItem as="p" translateZ="35" className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
+            <CardItem as="p" translateZ="35" className="text-neutral-500 text-sm max-w-screen-sm mt-2 dark:text-neutral-300">
               {props.description}
             </CardItem>
             <CardItem translateZ="50" className="w-full mt-4 overflow-hidden">
               <img
                 src={image}
-                className="h-60 w-full object-fill rounded-xl group-hover/card:shadow-xl"
+                className="h-60 w-full object-fill rounded-xl"
                 alt={`${props.title} project`}
               />
             </CardItem>
-            <div className="flex justify-around items-center mt-6">
+            <div className="flex justify-around items-center mt-4">
               <div className="flex flex-col w-3/4 md:flex-row space-y-2 md:space-y-0">
                 {props.gitHub && (
                   <a href={props.gitHub} target="_blank" rel="noopener noreferrer">
@@ -205,9 +187,9 @@ export default function ThreeDCardDemo() {
                 )}
               </div>
               {props.deployed && (
-                <div className="flex justify-end w-full md:w-auto">
+                <div className="flex justify-end w-full">
                   <a href={props.deployed} target="_blank" rel="noopener noreferrer">
-                    <CardItem translateZ={20} className="px-2 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold">
+                    <CardItem translateZ={20} className="px-2 py-2 rounded-xl bg-black text-white text-xs font-bold">
                       Live Site →
                     </CardItem>
                   </a>
@@ -221,7 +203,7 @@ export default function ThreeDCardDemo() {
   }
 
   return (
-    <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8">
+    <div className="grid grid-cols-1 lg:grid-cols-2">
       {projects.map((project, index) => (
         <ProjectsToShow
           key={index}

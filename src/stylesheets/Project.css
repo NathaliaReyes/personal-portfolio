@@ -19,20 +19,10 @@ header {
   margin-right: 0.5rem !important;
 }
 
-.img-container {
-  position: relative;
-  display: inline-block;
-}
-
 .img-tooltip {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0px; /* Adjust to position above or below the image */
   left: 0%;
-  /* transform: translateX(-50%); */
-  background-color:#81d9f7;
-  color: #fff;
-  padding: 2px 8px;
-  border-radius: 5px;
   font-size: 10px;
   white-space: nowrap;
   opacity: 0;

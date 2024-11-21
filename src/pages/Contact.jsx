@@ -76,7 +76,7 @@ function Contact() {
   };
 
   return (
-    <div className='mx-6 md:mx-20'>
+    <div className='md:mx-10'>
       {submitted && (
         <div className="absolute top-0 left-0 w-full h-full bg-zinc-600 bg-opacity-50 flex justify-center items-center" style={{ zIndex: 50 }}>
           <div className="bg-sky-50 rounded shadow-lg p-2 text-center relative">
@@ -96,22 +96,22 @@ function Contact() {
         </div>
       )}
 
-      <form onSubmit={handleSubmit} className="container my-2 p-5 bg-zinc-100 rounded-lg shadow-lg mt-2 mb-4 ">
+      <form onSubmit={handleSubmit} className="px-5 py-3 md:px-10 bg-zinc-100 rounded-lg shadow-lg">
         <div>
           <h2 className='cormorant-infant-bold text-xl text-center'>Get in touch</h2>
-          <p className="cormorant-infant-semibold lg:text-xl md:text-lg sm:text-base mt-2 ml-10 mr-10 mb-4 text-center">
+          <p className="cormorant-infant-semibold lg:text-xl md:text-lg sm:text-base mt-2 md:ml-10 md:mr-10 mb-2 text-center">
             You're welcome to reach out via LinkedIn, GitHub, or email.
             Alternatively, you can simply fill out the form below to send a message.
             <br />Excited to connect with you!
 
           </p>
-          <p className='cormorant-infant-bold text-center'><i className='fas fa-envelope'></i>
+          <p className='cormorant-infant-bold text-center flex items-center justify-center'><i className='fas fa-envelope mr-1'></i>
             <a href="mailto:snrvdevelopment@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
               snrvdevelopment@gmail.com
             </a>
           </p>
-          <p className='cormorant-infant-bold text-center'>
-            <i className='fas fa-phone'></i>
+          <p className='cormorant-infant-bold text-center mb-1'>
+            <i className='fas fa-phone mr-1'></i>
             <a href="tel:+17208857042" style={{ textDecoration: 'none', color: 'inherit' }}>
               +1(720)-885-7042
             </a>
@@ -121,7 +121,7 @@ function Contact() {
         </div>
         <div className='flex flex-row space-x-2 mt-2'>
           <div className="w-full sm:w-1/2 mb-4">
-            <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Name</label>
+            <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold">Name</label>
             <input
               name="firstName"
               value={firstName}
@@ -134,7 +134,7 @@ function Contact() {
           </div>
 
           <div className="w-full sm:w-1/2 mb-4">
-            <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Last Name</label>
+            <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold">Last Name</label>
             <input
               name="lastName"
               value={lastName}
@@ -147,8 +147,8 @@ function Contact() {
           </div>
         </div>
 
-        <div className="mb-4 mr-4">
-          <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Email</label>
+        <div className="mb-4">
+          <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold">Email</label>
           <input
             name="email"
             value={email}
@@ -161,8 +161,8 @@ function Contact() {
           {!emailValid && email && <p className="text-red-900 mt-2 cormorant-infant-bold">Please enter a valid email address.</p>}
         </div>
 
-        <div className="mb-4 mr-4">
-          <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">Phone Number</label>
+        <div className="mb-4">
+          <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold">Phone Number</label>
           <PhoneInput
             name="phone"
             value={phone}
@@ -175,7 +175,7 @@ function Contact() {
         </div>
 
         <div className="mb-4 mr-4">
-          <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold mb-2">I am interested in:</label>
+          <label className="cormorant-infant-bold-italic block text-gray-700 text-sm font-bold">I am interested in:</label>
           <div className="relative">
             <select
               name="inquiry"
@@ -194,7 +194,7 @@ function Contact() {
         </div>
 
         <div className="mb-6 ">
-          <label className="cormorant-infant-bold-italic block text-zinc-700 text-sm font-weight-bold mb-2">Message</label>
+          <label className="cormorant-infant-bold-italic block text-zinc-700 text-sm font-weight-bold">Message</label>
           <textarea
             name="message"
             className="cormorant-infant-light shadow appearance-none border rounded w-full py-2 px-3 text-zinc-900 focus:outline-none focus:shadow-outline"

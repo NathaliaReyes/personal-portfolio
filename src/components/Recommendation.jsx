@@ -8,21 +8,21 @@ function Recommendation() {
       country: 'United States',
       role: 'Full-Stack Web Developer',
       company: 'University of Denver',
-      text: "Silvia is someone I always want on my team. The first reason is that she is so incredibly intelligent. She is always several steps ahead of the curve due to her dedication to her work and her diligence when it comes to prioritizing her time. A second major reason is that the work she produces is so incredibly beautiful - from the user side of things to the organization in her code."
+      text: "Silvia is a brilliant team player, always steps ahead with her dedication and time management. Her work is stunning, from user design to clean code."
     },
     {
       name: 'Jordan Heersink',
       country: 'United States',
       role: 'Full-Stack Web Developer',
       company: 'University of Denver',
-      text: "Silvia’s attention to detail and willingness to dive head-first into new concepts is something that impressed me in my time working with her. When presented with a task that was new and nobody else really wanted, Silvia did not hesitate to take it. Silvia is willing to take the time to not only learn new skills (and learn them quickly) but also takes the time to perfect them too."
+      text: "Silvia's attention to detail and eagerness to tackle new challenges amazed me. She quickly learns and perfects new skills with dedication and confidence."
     },
     {
       name: 'Monica S. II',
       country: 'Argentina',
       role: 'Senior IT Recruiter',
       company: 'LATAM',
-      text: "Silvia is a dedicated professional who takes on every challenge she faces. You know you can rely on her, and you're certain she will meet the project’s objectives on time and as expected. Persistent, analytical, and results-oriented, she always gives her best. She is a valuable asset who will greatly contribute to any team, both on a professional and personal level."
+      text: "Silvia is a dedicated, reliable professional who meets goals on time. Persistent and results-driven, she's a valuable asset to any team."
     }
   ]
 
@@ -33,7 +33,7 @@ function Recommendation() {
         <p className='text-center text-sky-50 cormorant-infant-bold'>
           <strong>{props.name}</strong> in {props.country}
         </p>
-        <p className='text-zinc-400 text-center text-sm'>
+        <p className='text-zinc-400 text-center text-xs md:text-sm mb-1'>
           {props.role} at <strong>{props.company}</strong>
         </p>
         <p className='cormorant-infant-light text-sm sm:text-base text-sky-50 paragraph'>
