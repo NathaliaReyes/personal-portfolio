@@ -19,6 +19,11 @@ header {
   margin-right: 0.5rem !important;
 }
 
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
 .img-tooltip {
   /* position: absolute; */
   bottom: 0px; /* Adjust to position above or below the image */
