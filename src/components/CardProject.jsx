@@ -11,21 +11,20 @@ import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 
 export default function ThreeDCardDemo() {
   const projects = [
+    
     {
-      title: 'Alpine Auto Sales LLC',
+      title: 'Mayor Security LLC',
       technologies: [
         'React.js',
         'Node.js',
-        'Express.js',
-        'AWS S3-Ec2-CloudFront',
+        'CSS',
         'Tailwind CSS',
-        'Aceternity'
       ],
-      description: 'A full stack application for a dealership car, providing information and details about the cars available to purchase and a contact form for inquiries.',
-      image: 'auto',
-      gitHub: 'https://github.com/NathaliaReyes/alpine_auto_cars.git',
-      videoWalkthrought: 'https://drive.google.com/file/d/1CxSo_DGtIHO5r96fMN7_BGL0ZJArjvNF/view?usp=sharing',
-      deployed: 'https://usa.alpineauto.xyz/'
+      description: 'A React application for a Security Company, providing information and details about the business and the services they provide.',
+      image: 'mayorSec',
+      gitHub: 'https://github.com/NathaliaReyes/mayor_security_website.git',
+      videoWalkthrought: '',
+      deployed: 'https://mayorsecurityllc.com/'
     },
     {
       title: 'Harmony Wellness & Spa',
@@ -135,6 +134,22 @@ export default function ThreeDCardDemo() {
       gitHub: 'https://github.com/NathaliaReyes/SalesManagement.git',
       videoWalkthrought: '',
       deployed: ''
+    },
+    {
+      title: 'Alpine Auto Sales LLC',
+      technologies: [
+        'React.js',
+        'Node.js',
+        'Express.js',
+        'AWS S3-Ec2-CloudFront',
+        'Tailwind CSS',
+        'Aceternity'
+      ],
+      description: 'A full stack application for a dealership car, providing information and details about the cars available to purchase and a contact form for inquiries.',
+      image: 'auto',
+      gitHub: 'https://github.com/NathaliaReyes/alpine_auto_cars.git',
+      videoWalkthrought: 'https://drive.google.com/file/d/1CxSo_DGtIHO5r96fMN7_BGL0ZJArjvNF/view?usp=sharing',
+      deployed: 'https://usa.alpineauto.xyz/'
     },
   ]
 
